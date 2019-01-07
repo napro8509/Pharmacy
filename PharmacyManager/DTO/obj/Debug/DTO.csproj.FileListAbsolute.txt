@@ -1,0 +1,39 @@
+D:\ooad\Pharmacy-Management\PharmacyManager\DTO\bin\Debug\DTO.dll
+D:\ooad\Pharmacy-Management\PharmacyManager\DTO\bin\Debug\DTO.pdb
+D:\ooad\Pharmacy-Management\PharmacyManager\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\ooad\Pharmacy-Management\PharmacyManager\DTO\obj\Debug\DTO.dll
+D:\ooad\Pharmacy-Management\PharmacyManager\DTO\obj\Debug\DTO.pdb
+C:\Users\DELL\Downloads\PharmacyManager\PharmacyManager\DTO\bin\Debug\DTO.dll
+C:\Users\DELL\Downloads\PharmacyManager\PharmacyManager\DTO\bin\Debug\DTO.pdb
+C:\Users\DELL\Downloads\PharmacyManager\PharmacyManager\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Downloads\PharmacyManager\PharmacyManager\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Downloads\PharmacyManager\PharmacyManager\DTO\obj\Debug\DTO.dll
+C:\Users\DELL\Downloads\PharmacyManager\PharmacyManager\DTO\obj\Debug\DTO.pdb
+D:\ooad\Pharmacy-Management\update\PharmacyManager\PharmacyManager\DTO\bin\Debug\DTO.dll
+D:\ooad\Pharmacy-Management\update\PharmacyManager\PharmacyManager\DTO\bin\Debug\DTO.pdb
+D:\ooad\Pharmacy-Management\update\PharmacyManager\PharmacyManager\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\ooad\Pharmacy-Management\update\PharmacyManager\PharmacyManager\DTO\obj\Debug\DTO.dll
+D:\ooad\Pharmacy-Management\update\PharmacyManager\PharmacyManager\DTO\obj\Debug\DTO.pdb
+C:\Users\DELL\Downloads\update\PharmacyManager\PharmacyManager\DTO\bin\Debug\DTO.dll
+C:\Users\DELL\Downloads\update\PharmacyManager\PharmacyManager\DTO\bin\Debug\DTO.pdb
+C:\Users\DELL\Downloads\update\PharmacyManager\PharmacyManager\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Downloads\update\PharmacyManager\PharmacyManager\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Downloads\update\PharmacyManager\PharmacyManager\DTO\obj\Debug\DTO.dll
+C:\Users\DELL\Downloads\update\PharmacyManager\PharmacyManager\DTO\obj\Debug\DTO.pdb
+D:\Projects\Four Year\update\PharmacyManager\PharmacyManager\DTO\bin\Debug\DTO.dll
+D:\Projects\Four Year\update\PharmacyManager\PharmacyManager\DTO\bin\Debug\DTO.pdb
+D:\Projects\Four Year\update\PharmacyManager\PharmacyManager\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\Projects\Four Year\update\PharmacyManager\PharmacyManager\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Projects\Four Year\update\PharmacyManager\PharmacyManager\DTO\obj\Debug\DTO.dll
+D:\Projects\Four Year\update\PharmacyManager\PharmacyManager\DTO\obj\Debug\DTO.pdb
+D:\ooad\Pharmacy-Management\final\Pharmacy-Management\PharmacyManager\DTO\bin\Debug\DTO.dll
+D:\ooad\Pharmacy-Management\final\Pharmacy-Management\PharmacyManager\DTO\bin\Debug\DTO.pdb
+D:\ooad\Pharmacy-Management\final\Pharmacy-Management\PharmacyManager\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\ooad\Pharmacy-Management\final\Pharmacy-Management\PharmacyManager\DTO\obj\Debug\DTO.dll
+D:\ooad\Pharmacy-Management\final\Pharmacy-Management\PharmacyManager\DTO\obj\Debug\DTO.pdb
+D:\Projects\Four Year\0601\Pharmacy-Management\PharmacyManager\DTO\bin\Debug\DTO.dll
+D:\Projects\Four Year\0601\Pharmacy-Management\PharmacyManager\DTO\bin\Debug\DTO.pdb
+D:\Projects\Four Year\0601\Pharmacy-Management\PharmacyManager\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\Projects\Four Year\0601\Pharmacy-Management\PharmacyManager\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Projects\Four Year\0601\Pharmacy-Management\PharmacyManager\DTO\obj\Debug\DTO.dll
+D:\Projects\Four Year\0601\Pharmacy-Management\PharmacyManager\DTO\obj\Debug\DTO.pdb
