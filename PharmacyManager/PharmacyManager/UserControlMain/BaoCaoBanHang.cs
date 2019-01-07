@@ -279,9 +279,6 @@ namespace PharmacyManager.UserControlMain
             db.Get_ThongKeBan();
             bs.DataSource = db.Get_ThongKeBan().Tables["DONBAN"];
             grid_baoCaoBanHang.DataSource = bs;
-
-
-
         }
         private List<Thuoc> th = new List<Thuoc>();
         BUS_THUOC thuoc = new BUS_THUOC();

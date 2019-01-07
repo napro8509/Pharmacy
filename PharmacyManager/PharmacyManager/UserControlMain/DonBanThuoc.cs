@@ -21,6 +21,7 @@ namespace PharmacyManager.UserControlMain
         BUS_DonBan db = new BUS_DonBan();
         private List<Thuoc> th = new List<Thuoc>();
         string MaDuocSy;
+        string MaDonBan;
         public DonBanThuoc(String MaDuocSy)
         {
             this.MaDuocSy = MaDuocSy;
@@ -273,7 +274,7 @@ namespace PharmacyManager.UserControlMain
             else
             {
                 
-                string Ma = db.Get_TaoMaDonBan();
+                MaDonBan = db.Get_TaoMaDonBan();
                 DateTime now = DateTime.Today;
                 string ngaythang = now.ToString();
                 string[] tokens = ngaythang.Split(' ');
@@ -282,7 +283,7 @@ namespace PharmacyManager.UserControlMain
                 int SoLieu = 0;
                 if (cbb_LoaiDonThuoc.SelectedIndex == 0)
                     SoLieu = cbb_SoLieu.SelectedIndex+1;
-                db.TaoDonBan(Ma, cbb_LoaiDonThuoc.SelectedIndex, ngaythang, MaDuocSy,SoLieu, GiaTien);
+                db.TaoDonBan(MaDonBan, cbb_LoaiDonThuoc.SelectedIndex, ngaythang, MaDuocSy,SoLieu, GiaTien);
                 foreach (Thuoc A in th)
                 {
                     string ma_thuoc = A.getMaSanPham();
@@ -311,7 +312,7 @@ namespace PharmacyManager.UserControlMain
                     //string Loaisl = A.GetLoaiSL().ToString();
                     string ntn = A.getNTN();
                     int Gia = A.getTien();
-                    db.CTDB(ma_thuoc, Ma, sl.ToString(), ntn, 1, Gia);
+                    db.CTDB(ma_thuoc, MaDonBan, sl.ToString(), ntn, 1, Gia);
                     A.setgt();
                 }
                 thuoc_ButtonClick(null, null);
@@ -355,7 +356,17 @@ namespace PharmacyManager.UserControlMain
 
         private void simpleButton4_Click(object sender, EventArgs e)
         {
+            try
+            {
+                PrintReport report = new PrintReport();
+                report.getData(MaDonBan);
+                report.print();
+                report.ShowDialog();
+            }
+            catch(Exception ex)
+            {
 
+            }
         }
 
         private void sidePanel5_Click(object sender, EventArgs e)

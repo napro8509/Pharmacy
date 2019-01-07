@@ -27,6 +27,10 @@ namespace BUS
         {
             return db.Get_ThongKeKhoangTime(nam, thang, ngay, MaDuocSy, nam_2, thang_2, ngay_2, ThuocNhayCam);
         }
+        public DataSet GetDonBan(string MaDonBan)
+        {
+            return db.GetDonBan(MaDonBan);
+        }
         public DataTable Get_AllDoanhThu()
         {
             return db.Get_AllDoanhThu();

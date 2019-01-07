@@ -34,6 +34,29 @@ namespace DAL
                 return null;
             }
         }
+        public DataSet GetDonBan(string MaDonBan)//Lấy tất thông tin thuốc                 
+        {
+            try
+            {
+                SqlDataAdapter da;
+                DataSet ds;
+                string sqlstr = "select MaDonBan,CONVERT (varchar(10),NgayBan, 101) 'NgayBan',LoaiDon,SoLieu,Gia from DONBAN ";
+                sqlstr += " where MaDonBan ='" + MaDonBan + "'";
+                da = new SqlDataAdapter(sqlstr, _cn);
+                _cn.Open();
+                ds = new DataSet();
+                ds.Clear();
+
+                da.Fill(ds, "DONBAN");
+                _cn.Close();
+                return ds;
+            }
+            catch
+            {
+                _cn.Close();
+                return null;
+            }
+        }
         public bool XoaCTDB(string MaDonBan)
         {
             _cn.Open();
