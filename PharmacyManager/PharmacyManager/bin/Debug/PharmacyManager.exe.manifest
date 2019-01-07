@@ -42,26 +42,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BUS.dll" size="10240">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BUS.dll" size="10752">
       <assemblyIdentity name="BUS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>m2JiXa4TyYdCbY7Dqw5OitgZpccan0JsYMXC/vqNDg0=</dsig:DigestValue>
+        <dsig:DigestValue>FQIj/Jfujp2BptWB8sx1nLbtLlbCJqRvw5lxR9tkG+4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DAL.dll" size="34304">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DAL.dll" size="35840">
       <assemblyIdentity name="DAL" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>RCMkYaxkzDuqTn2Wp58jBpLXlPioYoPob3pUl+R237Y=</dsig:DigestValue>
+        <dsig:DigestValue>THqxvZWkViznJd//qJYsDSuB8yQGdxvxfcOGHq0Re68=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1117,32 +1117,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-<<<<<<< HEAD
-        <dsig:DigestValue>r9nY0XOKVKzvVixklkb/BW+svtz/izCu99piT+2PWb4=</dsig:DigestValue>
-=======
         <dsig:DigestValue>T5/+DJTUpuHT0mMhdLSbpttuD0lawAVWy3xMlZWxeoE=</dsig:DigestValue>
->>>>>>> Na
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-<<<<<<< HEAD
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DAL.dll" size="36352">
-      <assemblyIdentity name="DAL" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
-=======
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\DevExpress.XtraEditors.v17.1.resources.dll" size="92400">
       <assemblyIdentity name="DevExpress.XtraEditors.v17.1.resources" version="17.1.0.0" publicKeyToken="B88D1754D700E49A" language="es" processorArchitecture="msil" />
->>>>>>> Na
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-<<<<<<< HEAD
-        <dsig:DigestValue>HMcjv4llI+Mh20T0jf8Ohatg3ug1O4t+6lWPiFMTGNw=</dsig:DigestValue>
-=======
         <dsig:DigestValue>dXiWGLCcIlR0iTgO12nRCHqdEpSQsPRwQNoungUv4lY=</dsig:DigestValue>
->>>>>>> Na
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1855,22 +1842,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-<<<<<<< HEAD
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PharmacyManager.exe" size="289792">
-=======
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PharmacyManager.exe" size="314792">
->>>>>>> Na
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PharmacyManager.exe" size="322472">
       <assemblyIdentity name="PharmacyManager" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-<<<<<<< HEAD
-        <dsig:DigestValue>QTZ6Lz6zVCv629uxEwFfZ3Hb1D7GQ9IWk/vXn7+4DGY=</dsig:DigestValue>
-=======
-        <dsig:DigestValue>jKXbbSukOp/RHwbyA36JgaafWZyo+rP6LCgVjpZH538=</dsig:DigestValue>
->>>>>>> Na
+        <dsig:DigestValue>Ht+pz6CHmoX0MJ0/fCWfmC0ftGQbL4mL6+y6Va8RC5g=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1886,21 +1865,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-<<<<<<< HEAD
-  <file name="PharmacyManager.exe.config" size="75">
-=======
   <file name="PharmacyManager.exe.config" size="1099">
->>>>>>> Na
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-<<<<<<< HEAD
-      <dsig:DigestValue>fBJhPclTp8VVPFtsGkcAR/8d50QtqyrdMf8Wbg7SCPo=</dsig:DigestValue>
-=======
       <dsig:DigestValue>JFXyJ/shCMlMStdlTOgFhQ3RkAIIFmj8gp4uYH9gw6A=</dsig:DigestValue>
->>>>>>> Na
     </hash>
   </file>
 </asmv1:assembly>
