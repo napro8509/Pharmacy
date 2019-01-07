@@ -42,6 +42,10 @@
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
+            this.lbl_ThuNhap = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_TongThu = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtNgay = new DevExpress.XtraEditors.LabelControl();
             this.txtThang = new DevExpress.XtraEditors.LabelControl();
@@ -51,10 +55,6 @@
             this.txtNam2 = new DevExpress.XtraEditors.LabelControl();
             this.grid_baoCaoBanHang = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.lbl_TongThu = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lbl_ThuNhap = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grid_DonNhap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.sidePanel1.SuspendLayout();
@@ -66,11 +66,11 @@
             // grid_DonNhap
             // 
             this.grid_DonNhap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.grid_DonNhap.Location = new System.Drawing.Point(92, 186);
+            this.grid_DonNhap.Location = new System.Drawing.Point(55, 121);
             this.grid_DonNhap.LookAndFeel.UseDefaultLookAndFeel = false;
             this.grid_DonNhap.MainView = this.gridView1;
             this.grid_DonNhap.Name = "grid_DonNhap";
-            this.grid_DonNhap.Size = new System.Drawing.Size(492, 316);
+            this.grid_DonNhap.Size = new System.Drawing.Size(492, 381);
             this.grid_DonNhap.TabIndex = 38;
             this.grid_DonNhap.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -229,6 +229,54 @@
             this.sidePanel2.TabIndex = 42;
             this.sidePanel2.Text = "sidePanel2";
             // 
+            // lbl_ThuNhap
+            // 
+            this.lbl_ThuNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_ThuNhap.AutoSize = true;
+            this.lbl_ThuNhap.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ThuNhap.ForeColor = System.Drawing.Color.Red;
+            this.lbl_ThuNhap.Location = new System.Drawing.Point(639, 81);
+            this.lbl_ThuNhap.Name = "lbl_ThuNhap";
+            this.lbl_ThuNhap.Size = new System.Drawing.Size(31, 32);
+            this.lbl_ThuNhap.TabIndex = 44;
+            this.lbl_ThuNhap.Text = "0";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(466, 81);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(142, 32);
+            this.label4.TabIndex = 43;
+            this.label4.Text = "Thu Nhập:";
+            // 
+            // lbl_TongThu
+            // 
+            this.lbl_TongThu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_TongThu.AutoSize = true;
+            this.lbl_TongThu.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TongThu.ForeColor = System.Drawing.Color.Red;
+            this.lbl_TongThu.Location = new System.Drawing.Point(797, 30);
+            this.lbl_TongThu.Name = "lbl_TongThu";
+            this.lbl_TongThu.Size = new System.Drawing.Size(31, 32);
+            this.lbl_TongThu.TabIndex = 42;
+            this.lbl_TongThu.Text = "0";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(624, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(137, 32);
+            this.label3.TabIndex = 41;
+            this.label3.Text = "Tổng Vốn:";
+            // 
             // labelControl2
             // 
             this.labelControl2.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -323,11 +371,11 @@
             // grid_baoCaoBanHang
             // 
             this.grid_baoCaoBanHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.grid_baoCaoBanHang.Location = new System.Drawing.Point(590, 186);
+            this.grid_baoCaoBanHang.Location = new System.Drawing.Point(553, 121);
             this.grid_baoCaoBanHang.LookAndFeel.UseDefaultLookAndFeel = false;
             this.grid_baoCaoBanHang.MainView = this.gridView2;
             this.grid_baoCaoBanHang.Name = "grid_baoCaoBanHang";
-            this.grid_baoCaoBanHang.Size = new System.Drawing.Size(492, 316);
+            this.grid_baoCaoBanHang.Size = new System.Drawing.Size(492, 381);
             this.grid_baoCaoBanHang.TabIndex = 44;
             this.grid_baoCaoBanHang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -336,54 +384,6 @@
             // 
             this.gridView2.GridControl = this.grid_baoCaoBanHang;
             this.gridView2.Name = "gridView2";
-            // 
-            // lbl_TongThu
-            // 
-            this.lbl_TongThu.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_TongThu.AutoSize = true;
-            this.lbl_TongThu.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_TongThu.ForeColor = System.Drawing.Color.Red;
-            this.lbl_TongThu.Location = new System.Drawing.Point(975, 30);
-            this.lbl_TongThu.Name = "lbl_TongThu";
-            this.lbl_TongThu.Size = new System.Drawing.Size(31, 32);
-            this.lbl_TongThu.TabIndex = 42;
-            this.lbl_TongThu.Text = "0";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(802, 30);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 32);
-            this.label3.TabIndex = 41;
-            this.label3.Text = "Tổng Vốn:";
-            // 
-            // lbl_ThuNhap
-            // 
-            this.lbl_ThuNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_ThuNhap.AutoSize = true;
-            this.lbl_ThuNhap.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ThuNhap.ForeColor = System.Drawing.Color.Red;
-            this.lbl_ThuNhap.Location = new System.Drawing.Point(695, 81);
-            this.lbl_ThuNhap.Name = "lbl_ThuNhap";
-            this.lbl_ThuNhap.Size = new System.Drawing.Size(31, 32);
-            this.lbl_ThuNhap.TabIndex = 44;
-            this.lbl_ThuNhap.Text = "0";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(522, 81);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 32);
-            this.label4.TabIndex = 43;
-            this.label4.Text = "Thu Nhập:";
             // 
             // TinhGiaVon
             // 

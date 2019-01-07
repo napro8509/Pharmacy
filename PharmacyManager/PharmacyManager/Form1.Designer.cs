@@ -61,6 +61,7 @@
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.btn_TraThuocHetHan = new DevExpress.XtraBars.BarButtonItem();
             this.btn_TaiKhoan = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_SoLuongThuocBan = new DevExpress.XtraBars.BarButtonItem();
             this.homeTab = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -68,7 +69,6 @@
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabControlMain = new DevExpress.XtraTab.XtraTabControl();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
-            this.btn_SoLuongThuocBan = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControlMain)).BeginInit();
@@ -343,6 +343,15 @@
             this.btn_TaiKhoan.Name = "btn_TaiKhoan";
             this.btn_TaiKhoan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_TaiKhoan_ItemClick);
             // 
+            // btn_SoLuongThuocBan
+            // 
+            this.btn_SoLuongThuocBan.Caption = "Số Lượng Thuốc Bán";
+            this.btn_SoLuongThuocBan.Id = 31;
+            this.btn_SoLuongThuocBan.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_SoLuongThuocBan.ImageOptions.Image")));
+            this.btn_SoLuongThuocBan.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_SoLuongThuocBan.ImageOptions.LargeImage")));
+            this.btn_SoLuongThuocBan.Name = "btn_SoLuongThuocBan";
+            this.btn_SoLuongThuocBan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_SoLuongThuocBan_ItemClick);
+            // 
             // homeTab
             // 
             this.homeTab.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -407,13 +416,6 @@
             // defaultLookAndFeel1
             // 
             this.defaultLookAndFeel1.LookAndFeel.SkinName = "Blueprint";
-            // 
-            // btn_SoLuongThuocBan
-            // 
-            this.btn_SoLuongThuocBan.Caption = "Số Lượng Thuốc Bán";
-            this.btn_SoLuongThuocBan.Id = 31;
-            this.btn_SoLuongThuocBan.Name = "btn_SoLuongThuocBan";
-            this.btn_SoLuongThuocBan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_SoLuongThuocBan_ItemClick);
             // 
             // Form1
             // 

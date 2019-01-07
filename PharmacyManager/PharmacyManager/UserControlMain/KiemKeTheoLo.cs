@@ -23,19 +23,26 @@ namespace PharmacyManager.UserControlMain
 
         private void KiemKeTheoLo_Load(object sender, EventArgs e)
         {
-            BindingSource bs = new BindingSource();
-            //lh.Get_LOHANGNHAPKHO();
-            bs.DataSource = lh.Get_LOHANGNHAPKHO(txt_MaDonNhap.Text).Tables["DONNHAP,DUOCSY"];
-            grid_KiemKeTheoLo.DataSource = bs;
-            this.Dock = DockStyle.Fill;
-            grid_KiemKeTheoLo.Width = this.Width / 2;
+            try
+            {
+                BindingSource bs = new BindingSource();
+                //lh.Get_LOHANGNHAPKHO();
+                            bs.DataSource = lh.Get_LOHANGNHAPKHO(txt_MaDonNhap.Text).Tables["DONNHAP,DUOCSY"];
+                grid_KiemKeTheoLo.DataSource = bs;
+                this.Dock = DockStyle.Fill;
+                grid_KiemKeTheoLo.Width = this.Width / 2;
 
-            DataRowView selectedRow = (DataRowView)gridView1.GetRow(gridView1.FocusedRowHandle);
-            string t = selectedRow.Row.ItemArray[0].ToString();
-            BindingSource b = new BindingSource();
-            lh.Get_CTDN(t);
-            b.DataSource = lh.Get_CTDN(t).Tables["CTDN"];
-            grid_CTDN.DataSource = b;
+                DataRowView selectedRow = (DataRowView)gridView1.GetRow(gridView1.FocusedRowHandle);
+                string t = selectedRow.Row.ItemArray[0].ToString();
+                BindingSource b = new BindingSource();
+                lh.Get_CTDN(t);
+                b.DataSource = lh.Get_CTDN(t).Tables["CTDN"];
+                grid_CTDN.DataSource = b;
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
 
         private List<Thuoc> th = new List<Thuoc>();
@@ -243,7 +250,7 @@ namespace PharmacyManager.UserControlMain
         private void txt_MaDonNhap_KeyUp(object sender, KeyEventArgs e)
         {
             BindingSource bs = new BindingSource();
-            bs.DataSource = lh.Get_LOHANGNHAPKHO(txt_MaDonNhap.Text).Tables["DONNHAP,DUOCSY"];
+                        bs.DataSource = lh.Get_LOHANGNHAPKHO(txt_MaDonNhap.Text).Tables["DONNHAP,DUOCSY"];
             grid_KiemKeTheoLo.DataSource = bs;
 
             grid_KiemKeTheoLo_Click(null, null);

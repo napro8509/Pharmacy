@@ -27,15 +27,13 @@ namespace PharmacyManager.UserControlMain
             this.MaDuocSy = MaDuocSy;
             InitializeComponent();
             this.Dock = DockStyle.Fill;
-            sidePanel1.Width = this.Width / 2;
         }
 
         private void DonBanThuoc_Load(object sender, EventArgs e)
         {
             cbb_LoaiDonThuoc.SelectedIndex = 0;
             this.ActiveControl = txt_mathuoc;
-            sidePanel1.Width = this.Width / 2;
-
+            sidePanel1.Width = this.Width * 2 / 3;
 
             for(int i=1;i<=9;i++)
             {
@@ -72,6 +70,7 @@ namespace PharmacyManager.UserControlMain
                 int t = int.Parse(thuoc.Get_GiaTriThuoc(txt_mathuoc.Text).Rows[0]["Vien"].ToString());
                 //int t = 1;
                 Thuoc X = new Thuoc(t);
+                X.Width = sidePanel1.Width;
                 X.setSTT(th.Count() + 1);
                 X.setMaSanPham(txt_mathuoc.Text);
                 X.setTenThuoc(thuoc.Get_GiaTriThuoc(txt_mathuoc.Text).Rows[0]["TenThuoc"].ToString());

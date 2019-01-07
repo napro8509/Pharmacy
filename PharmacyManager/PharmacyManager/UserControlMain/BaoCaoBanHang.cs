@@ -15,7 +15,6 @@ namespace PharmacyManager.UserControlMain
     {
         BUS_DonBan db = new BUS_DonBan();
         BUS_DuocSy ds = new BUS_DuocSy();
-        int panelHeight = 0;
         public BaoCaoBanHang()
         {
             InitializeComponent();
@@ -53,8 +52,6 @@ namespace PharmacyManager.UserControlMain
                 cbb_SoLieu.Items.Add(name);
             }
             cbb_SoLieu.Hide();
-            int panelHeight = panel1.Height;
-            panel1.Height = 0;
         }
         void addItem()
         {
@@ -287,7 +284,6 @@ namespace PharmacyManager.UserControlMain
         BUS_THUOC thuoc = new BUS_THUOC();
         private void btn_SuaDonNhap_Click(object sender, EventArgs e)
         {
-            panel1.Height = panelHeight;
             DataRowView selected_Row = (DataRowView)gridView1.GetRow(gridView1.FocusedRowHandle);
             int SoLieu = int.Parse(selected_Row.Row.ItemArray[2].ToString());
             if(SoLieu!=0)
@@ -303,6 +299,7 @@ namespace PharmacyManager.UserControlMain
                 int sl = int.Parse(selectedRow.Row.ItemArray[2].ToString());
                 int t = int.Parse(thuoc.Get_GiaTriThuoc(MaThuoc).Rows[0]["Vien"].ToString());
                 Thuoc X = new Thuoc(t);
+                X.Width = panel1.Width;
                 X.setSTT(th.Count() + 1);
                 X.setMaSanPham(MaThuoc);
                 X.setTenThuoc(thuoc.Get_GiaTriThuoc(MaThuoc).Rows[0]["TenThuoc"].ToString());

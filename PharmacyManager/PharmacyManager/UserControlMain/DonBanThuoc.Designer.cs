@@ -58,6 +58,7 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.label7 = new System.Windows.Forms.Label();
             this.sidePanel1.SuspendLayout();
             this.sidePanel5.SuspendLayout();
             this.sidePanel3.SuspendLayout();
@@ -128,6 +129,7 @@
             this.sidePanel5.Controls.Add(this.label4);
             this.sidePanel5.Controls.Add(this.lbl_masanpham);
             this.sidePanel5.Controls.Add(this.stt);
+            this.sidePanel5.Controls.Add(this.label7);
             this.sidePanel5.Controls.Add(this.label3);
             this.sidePanel5.Controls.Add(this.label2);
             this.sidePanel5.Controls.Add(this.lbl_giasauthue);
@@ -198,11 +200,11 @@
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(534, 11);
+            this.label3.Location = new System.Drawing.Point(544, 11);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 22);
+            this.label3.Size = new System.Drawing.Size(45, 22);
             this.label3.TabIndex = 19;
-            this.label3.Text = "Đơn Vị Tính";
+            this.label3.Text = "ĐVT";
             // 
             // label2
             // 
@@ -211,7 +213,7 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(421, 11);
+            this.label2.Location = new System.Drawing.Point(431, 11);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 22);
             this.label2.TabIndex = 19;
@@ -224,7 +226,7 @@
             this.lbl_giasauthue.BackColor = System.Drawing.Color.White;
             this.lbl_giasauthue.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_giasauthue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lbl_giasauthue.Location = new System.Drawing.Point(294, 11);
+            this.lbl_giasauthue.Location = new System.Drawing.Point(304, 11);
             this.lbl_giasauthue.Name = "lbl_giasauthue";
             this.lbl_giasauthue.Size = new System.Drawing.Size(36, 22);
             this.lbl_giasauthue.TabIndex = 19;
@@ -234,6 +236,7 @@
             // 
             this.sidePanel3.Appearance.BackColor = System.Drawing.Color.White;
             this.sidePanel3.Appearance.Options.UseBackColor = true;
+            this.sidePanel3.Controls.Add(this.cbb_SoLieu);
             this.sidePanel3.Controls.Add(this.cbb_LoaiDonThuoc);
             this.sidePanel3.Controls.Add(this.simpleButton1);
             this.sidePanel3.Controls.Add(this.label6);
@@ -276,7 +279,7 @@
             this.simpleButton1.AppearanceHovered.Options.UseBackColor = true;
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
             this.simpleButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(640, 12);
+            this.simpleButton1.Location = new System.Drawing.Point(601, 11);
             this.simpleButton1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(120, 67);
@@ -314,7 +317,6 @@
             // 
             this.sidePanel2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.sidePanel2.Appearance.Options.UseBackColor = true;
-            this.sidePanel2.Controls.Add(this.cbb_SoLieu);
             this.sidePanel2.Controls.Add(this.simpleButton4);
             this.sidePanel2.Controls.Add(this.simpleButton3);
             this.sidePanel2.Controls.Add(this.simpleButton2);
@@ -327,10 +329,12 @@
             // 
             // cbb_SoLieu
             // 
+            this.cbb_SoLieu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbb_SoLieu.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbb_SoLieu.FormattingEnabled = true;
-            this.cbb_SoLieu.Location = new System.Drawing.Point(380, 6);
+            this.cbb_SoLieu.Location = new System.Drawing.Point(741, 45);
             this.cbb_SoLieu.Name = "cbb_SoLieu";
-            this.cbb_SoLieu.Size = new System.Drawing.Size(169, 21);
+            this.cbb_SoLieu.Size = new System.Drawing.Size(169, 30);
             this.cbb_SoLieu.TabIndex = 27;
             this.cbb_SoLieu.SelectedIndexChanged += new System.EventHandler(this.cbb_SoLieu_SelectedIndexChanged);
             // 
@@ -466,6 +470,19 @@
             this.gridView1.OptionsFind.FindNullPrompt = "Tìm kiếm";
             this.gridView1.Click += new System.EventHandler(this.gridView1_Click);
             // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label7.Location = new System.Drawing.Point(607, 11);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(32, 22);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "TT";
+            // 
             // DonBanThuoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -526,5 +543,6 @@
         private System.Windows.Forms.ComboBox cbb_LoaiDonThuoc;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbb_SoLieu;
+        private System.Windows.Forms.Label label7;
     }
 }

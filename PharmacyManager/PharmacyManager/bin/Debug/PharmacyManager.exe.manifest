@@ -1842,14 +1842,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PharmacyManager.exe" size="322472">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PharmacyManager.exe" size="330152">
       <assemblyIdentity name="PharmacyManager" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Ht+pz6CHmoX0MJ0/fCWfmC0ftGQbL4mL6+y6Va8RC5g=</dsig:DigestValue>
+        <dsig:DigestValue>i6/B5SjE65vRhPXS3qWncGSIE95N9xwQev7HMllXyKQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

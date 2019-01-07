@@ -36,7 +36,6 @@
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
-            this.txt_MaDonNhap = new System.Windows.Forms.TextBox();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel3 = new DevExpress.XtraEditors.SidePanel();
@@ -48,6 +47,15 @@
             this.btn_SuaDonNhap = new DevExpress.XtraEditors.SimpleButton();
             this.txt_mathuoc = new System.Windows.Forms.TextBox();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.txt_MaDonNhap = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_masanpham = new System.Windows.Forms.Label();
+            this.stt = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_giasauthue = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grid_KiemKeTheoLo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_CTDN)).BeginInit();
@@ -65,7 +73,7 @@
             this.grid_KiemKeTheoLo.LookAndFeel.UseDefaultLookAndFeel = false;
             this.grid_KiemKeTheoLo.MainView = this.gridView1;
             this.grid_KiemKeTheoLo.Name = "grid_KiemKeTheoLo";
-            this.grid_KiemKeTheoLo.Size = new System.Drawing.Size(338, 263);
+            this.grid_KiemKeTheoLo.Size = new System.Drawing.Size(338, 269);
             this.grid_KiemKeTheoLo.TabIndex = 28;
             this.grid_KiemKeTheoLo.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -75,6 +83,7 @@
             // 
             this.gridView1.GridControl = this.grid_KiemKeTheoLo;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsFind.AlwaysVisible = true;
             // 
             // grid_CTDN
             // 
@@ -86,7 +95,7 @@
             this.grid_CTDN.LookAndFeel.UseDefaultLookAndFeel = false;
             this.grid_CTDN.MainView = this.gridView2;
             this.grid_CTDN.Name = "grid_CTDN";
-            this.grid_CTDN.Size = new System.Drawing.Size(828, 263);
+            this.grid_CTDN.Size = new System.Drawing.Size(828, 269);
             this.grid_CTDN.TabIndex = 27;
             this.grid_CTDN.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -101,7 +110,7 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel1.Location = new System.Drawing.Point(63, 67);
+            this.panel1.Location = new System.Drawing.Point(63, 78);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1040, 173);
             this.panel1.TabIndex = 31;
@@ -116,14 +125,6 @@
             this.sidePanel1.Size = new System.Drawing.Size(1166, 59);
             this.sidePanel1.TabIndex = 36;
             this.sidePanel1.Text = "sidePanel1";
-            // 
-            // txt_MaDonNhap
-            // 
-            this.txt_MaDonNhap.Location = new System.Drawing.Point(52, 24);
-            this.txt_MaDonNhap.Name = "txt_MaDonNhap";
-            this.txt_MaDonNhap.Size = new System.Drawing.Size(154, 21);
-            this.txt_MaDonNhap.TabIndex = 26;
-            this.txt_MaDonNhap.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_MaDonNhap_KeyUp);
             // 
             // labelControl1
             // 
@@ -148,7 +149,7 @@
             this.sidePanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sidePanel2.Location = new System.Drawing.Point(0, 59);
             this.sidePanel2.Name = "sidePanel2";
-            this.sidePanel2.Size = new System.Drawing.Size(1166, 263);
+            this.sidePanel2.Size = new System.Drawing.Size(1166, 269);
             this.sidePanel2.TabIndex = 37;
             this.sidePanel2.Text = "sidePanel2";
             // 
@@ -218,14 +219,22 @@
             // 
             // sidePanel4
             // 
+            this.sidePanel4.Controls.Add(this.label5);
+            this.sidePanel4.Controls.Add(this.label4);
+            this.sidePanel4.Controls.Add(this.lbl_masanpham);
+            this.sidePanel4.Controls.Add(this.stt);
+            this.sidePanel4.Controls.Add(this.label7);
+            this.sidePanel4.Controls.Add(this.label3);
+            this.sidePanel4.Controls.Add(this.label2);
+            this.sidePanel4.Controls.Add(this.lbl_giasauthue);
             this.sidePanel4.Controls.Add(this.btn_SuaDonNhap);
             this.sidePanel4.Controls.Add(this.txt_mathuoc);
             this.sidePanel4.Controls.Add(this.labelControl4);
             this.sidePanel4.Controls.Add(this.panel1);
             this.sidePanel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.sidePanel4.Location = new System.Drawing.Point(0, 322);
+            this.sidePanel4.Location = new System.Drawing.Point(0, 328);
             this.sidePanel4.Name = "sidePanel4";
-            this.sidePanel4.Size = new System.Drawing.Size(1166, 260);
+            this.sidePanel4.Size = new System.Drawing.Size(1166, 254);
             this.sidePanel4.TabIndex = 39;
             this.sidePanel4.Text = "sidePanel4";
             // 
@@ -235,7 +244,7 @@
             this.btn_SuaDonNhap.Appearance.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SuaDonNhap.Appearance.Options.UseFont = true;
             this.btn_SuaDonNhap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_SuaDonNhap.ImageOptions.Image")));
-            this.btn_SuaDonNhap.Location = new System.Drawing.Point(960, 23);
+            this.btn_SuaDonNhap.Location = new System.Drawing.Point(960, 22);
             this.btn_SuaDonNhap.LookAndFeel.UseDefaultLookAndFeel = false;
             this.btn_SuaDonNhap.Name = "btn_SuaDonNhap";
             this.btn_SuaDonNhap.Size = new System.Drawing.Size(143, 31);
@@ -247,7 +256,7 @@
             // 
             this.txt_mathuoc.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_mathuoc.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mathuoc.Location = new System.Drawing.Point(138, 20);
+            this.txt_mathuoc.Location = new System.Drawing.Point(138, 19);
             this.txt_mathuoc.Name = "txt_mathuoc";
             this.txt_mathuoc.Size = new System.Drawing.Size(151, 30);
             this.txt_mathuoc.TabIndex = 43;
@@ -260,11 +269,123 @@
             this.labelControl4.Appearance.ForeColor = System.Drawing.SystemColors.Highlight;
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(63, 26);
+            this.labelControl4.Location = new System.Drawing.Point(63, 22);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(69, 19);
             this.labelControl4.TabIndex = 42;
             this.labelControl4.Text = "Mã Thuốc";
+            // 
+            // txt_MaDonNhap
+            // 
+            this.txt_MaDonNhap.Location = new System.Drawing.Point(61, 20);
+            this.txt_MaDonNhap.Name = "txt_MaDonNhap";
+            this.txt_MaDonNhap.Size = new System.Drawing.Size(156, 21);
+            this.txt_MaDonNhap.TabIndex = 26;
+            this.txt_MaDonNhap.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label5.Location = new System.Drawing.Point(870, 56);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(120, 22);
+            this.label5.TabIndex = 51;
+            this.label5.Text = "Ngày Hết Hạn";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label4.Location = new System.Drawing.Point(135, 56);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 22);
+            this.label4.TabIndex = 57;
+            this.label4.Text = "Mã Thuốc";
+            // 
+            // lbl_masanpham
+            // 
+            this.lbl_masanpham.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_masanpham.AutoSize = true;
+            this.lbl_masanpham.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_masanpham.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lbl_masanpham.Location = new System.Drawing.Point(245, 56);
+            this.lbl_masanpham.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_masanpham.Name = "lbl_masanpham";
+            this.lbl_masanpham.Size = new System.Drawing.Size(93, 22);
+            this.lbl_masanpham.TabIndex = 58;
+            this.lbl_masanpham.Text = "Tên Thuốc";
+            // 
+            // stt
+            // 
+            this.stt.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.stt.AutoSize = true;
+            this.stt.BackColor = System.Drawing.Color.White;
+            this.stt.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.stt.Location = new System.Drawing.Point(79, 56);
+            this.stt.Name = "stt";
+            this.stt.Size = new System.Drawing.Size(41, 22);
+            this.stt.TabIndex = 56;
+            this.stt.Text = "STT";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label7.Location = new System.Drawing.Point(742, 56);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(32, 22);
+            this.label7.TabIndex = 52;
+            this.label7.Text = "TT";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label3.Location = new System.Drawing.Point(650, 56);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 22);
+            this.label3.TabIndex = 53;
+            this.label3.Text = "ĐVT";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(514, 56);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 22);
+            this.label2.TabIndex = 54;
+            this.label2.Text = "Số Lượng";
+            // 
+            // lbl_giasauthue
+            // 
+            this.lbl_giasauthue.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_giasauthue.AutoSize = true;
+            this.lbl_giasauthue.BackColor = System.Drawing.Color.White;
+            this.lbl_giasauthue.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_giasauthue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lbl_giasauthue.Location = new System.Drawing.Point(390, 56);
+            this.lbl_giasauthue.Name = "lbl_giasauthue";
+            this.lbl_giasauthue.Size = new System.Drawing.Size(36, 22);
+            this.lbl_giasauthue.TabIndex = 55;
+            this.lbl_giasauthue.Text = "Giá";
             // 
             // KiemKeTheoLo
             // 
@@ -314,5 +435,13 @@
         private System.Windows.Forms.TextBox txt_mathuoc;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private System.Windows.Forms.TextBox txt_MaDonNhap;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl_masanpham;
+        private System.Windows.Forms.Label stt;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_giasauthue;
     }
 }

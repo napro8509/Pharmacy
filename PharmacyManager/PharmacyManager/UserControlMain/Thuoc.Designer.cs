@@ -63,7 +63,7 @@
             this.lbl_giasauthue.BackColor = System.Drawing.Color.White;
             this.lbl_giasauthue.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_giasauthue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lbl_giasauthue.Location = new System.Drawing.Point(312, 6);
+            this.lbl_giasauthue.Location = new System.Drawing.Point(315, 6);
             this.lbl_giasauthue.Name = "lbl_giasauthue";
             this.lbl_giasauthue.Size = new System.Drawing.Size(54, 22);
             this.lbl_giasauthue.TabIndex = 5;
@@ -89,7 +89,7 @@
             this.tenthuoc.BackColor = System.Drawing.Color.White;
             this.tenthuoc.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tenthuoc.ForeColor = System.Drawing.Color.Black;
-            this.tenthuoc.Location = new System.Drawing.Point(162, 6);
+            this.tenthuoc.Location = new System.Drawing.Point(170, 6);
             this.tenthuoc.Name = "tenthuoc";
             this.tenthuoc.Size = new System.Drawing.Size(59, 22);
             this.tenthuoc.TabIndex = 8;
@@ -124,7 +124,7 @@
             this.lbl_masanpham.AutoSize = true;
             this.lbl_masanpham.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_masanpham.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lbl_masanpham.Location = new System.Drawing.Point(66, 6);
+            this.lbl_masanpham.Location = new System.Drawing.Point(79, 6);
             this.lbl_masanpham.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_masanpham.Name = "lbl_masanpham";
             this.lbl_masanpham.Size = new System.Drawing.Size(59, 22);
@@ -178,7 +178,7 @@
             // 
             this.btn_xoa.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_xoa.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.btn_xoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btn_xoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_xoa.ImageOptions.Image")));
             this.btn_xoa.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
             this.btn_xoa.Location = new System.Drawing.Point(900, 0);
             this.btn_xoa.LookAndFeel.UseDefaultLookAndFeel = false;

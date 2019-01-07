@@ -123,6 +123,7 @@ namespace PharmacyManager.UserControlMain
 
         private void SoLuongThuocBan_Load(object sender, EventArgs e)
         {
+            this.Dock = DockStyle.Fill;
             addItem();
             //cbb_DuocSy.SelectedIndex = 0;
             ngay.SelectedIndex = now.Day - 1;

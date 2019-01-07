@@ -66,6 +66,14 @@
             this.cbb_SoLieu = new System.Windows.Forms.ComboBox();
             this.btn_SuaDonNhap = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_masanpham = new System.Windows.Forms.Label();
+            this.stt = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_giasauthue = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grid_baoCaoBanHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.sidePanel1.SuspendLayout();
@@ -97,7 +105,6 @@
             // 
             this.gridView1.GridControl = this.grid_baoCaoBanHang;
             this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsFind.AlwaysVisible = true;
             // 
             // cbb_LoaiThongKe
             // 
@@ -111,7 +118,7 @@
             "Bao Cáo Theo Khoảng Thời Gian",
             "Báo Cáo Theo Dược Viên",
             "Báo Cáo Theo Đơn"});
-            this.cbb_LoaiThongKe.Location = new System.Drawing.Point(196, 68);
+            this.cbb_LoaiThongKe.Location = new System.Drawing.Point(196, 55);
             this.cbb_LoaiThongKe.Name = "cbb_LoaiThongKe";
             this.cbb_LoaiThongKe.Size = new System.Drawing.Size(212, 30);
             this.cbb_LoaiThongKe.TabIndex = 4;
@@ -122,7 +129,7 @@
             this.nam.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.nam.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nam.FormattingEnabled = true;
-            this.nam.Location = new System.Drawing.Point(771, 68);
+            this.nam.Location = new System.Drawing.Point(771, 55);
             this.nam.Name = "nam";
             this.nam.Size = new System.Drawing.Size(80, 30);
             this.nam.TabIndex = 17;
@@ -133,7 +140,7 @@
             this.thang.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.thang.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.thang.FormattingEnabled = true;
-            this.thang.Location = new System.Drawing.Point(699, 68);
+            this.thang.Location = new System.Drawing.Point(699, 55);
             this.thang.Name = "thang";
             this.thang.Size = new System.Drawing.Size(62, 30);
             this.thang.TabIndex = 16;
@@ -144,7 +151,7 @@
             this.ngay.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.ngay.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ngay.FormattingEnabled = true;
-            this.ngay.Location = new System.Drawing.Point(631, 68);
+            this.ngay.Location = new System.Drawing.Point(631, 55);
             this.ngay.Name = "ngay";
             this.ngay.Size = new System.Drawing.Size(62, 30);
             this.ngay.TabIndex = 15;
@@ -156,7 +163,7 @@
             this.nam_2.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nam_2.ForeColor = System.Drawing.SystemColors.InfoText;
             this.nam_2.FormattingEnabled = true;
-            this.nam_2.Location = new System.Drawing.Point(997, 68);
+            this.nam_2.Location = new System.Drawing.Point(997, 55);
             this.nam_2.Name = "nam_2";
             this.nam_2.Size = new System.Drawing.Size(79, 30);
             this.nam_2.TabIndex = 20;
@@ -168,7 +175,7 @@
             this.thang_2.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.thang_2.ForeColor = System.Drawing.SystemColors.InfoText;
             this.thang_2.FormattingEnabled = true;
-            this.thang_2.Location = new System.Drawing.Point(928, 68);
+            this.thang_2.Location = new System.Drawing.Point(928, 55);
             this.thang_2.Name = "thang_2";
             this.thang_2.Size = new System.Drawing.Size(63, 30);
             this.thang_2.TabIndex = 19;
@@ -180,7 +187,7 @@
             this.ngay_2.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ngay_2.ForeColor = System.Drawing.SystemColors.InfoText;
             this.ngay_2.FormattingEnabled = true;
-            this.ngay_2.Location = new System.Drawing.Point(864, 68);
+            this.ngay_2.Location = new System.Drawing.Point(864, 55);
             this.ngay_2.Name = "ngay_2";
             this.ngay_2.Size = new System.Drawing.Size(58, 30);
             this.ngay_2.TabIndex = 18;
@@ -191,7 +198,7 @@
             this.cbb_DuocSy.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.cbb_DuocSy.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbb_DuocSy.FormattingEnabled = true;
-            this.cbb_DuocSy.Location = new System.Drawing.Point(414, 68);
+            this.cbb_DuocSy.Location = new System.Drawing.Point(414, 55);
             this.cbb_DuocSy.Name = "cbb_DuocSy";
             this.cbb_DuocSy.Size = new System.Drawing.Size(176, 30);
             this.cbb_DuocSy.TabIndex = 21;
@@ -229,20 +236,23 @@
             // 
             // cb_ThuocNhayCam
             // 
+            this.cb_ThuocNhayCam.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cb_ThuocNhayCam.AutoSize = true;
+            this.cb_ThuocNhayCam.BackColor = System.Drawing.Color.White;
             this.cb_ThuocNhayCam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_ThuocNhayCam.ForeColor = System.Drawing.Color.Black;
-            this.cb_ThuocNhayCam.Location = new System.Drawing.Point(1023, 15);
+            this.cb_ThuocNhayCam.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.cb_ThuocNhayCam.Location = new System.Drawing.Point(625, 89);
             this.cb_ThuocNhayCam.Name = "cb_ThuocNhayCam";
             this.cb_ThuocNhayCam.Size = new System.Drawing.Size(226, 24);
             this.cb_ThuocNhayCam.TabIndex = 27;
             this.cb_ThuocNhayCam.Text = "Là Đơn Thuốc Nhạy Cảm";
-            this.cb_ThuocNhayCam.UseVisualStyleBackColor = true;
+            this.cb_ThuocNhayCam.UseVisualStyleBackColor = false;
             this.cb_ThuocNhayCam.CheckedChanged += new System.EventHandler(this.cb_ThuocNhayCam_CheckedChanged);
             // 
             // txt_MaDonBan
             // 
-            this.txt_MaDonBan.Location = new System.Drawing.Point(242, 11);
+            this.txt_MaDonBan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_MaDonBan.Location = new System.Drawing.Point(453, 89);
             this.txt_MaDonBan.Name = "txt_MaDonBan";
             this.txt_MaDonBan.Size = new System.Drawing.Size(137, 20);
             this.txt_MaDonBan.TabIndex = 26;
@@ -257,7 +267,7 @@
             this.txtNam2.Appearance.ForeColor = System.Drawing.SystemColors.Highlight;
             this.txtNam2.Appearance.Options.UseFont = true;
             this.txtNam2.Appearance.Options.UseForeColor = true;
-            this.txtNam2.Location = new System.Drawing.Point(1005, 43);
+            this.txtNam2.Location = new System.Drawing.Point(1005, 30);
             this.txtNam2.Name = "txtNam2";
             this.txtNam2.Size = new System.Drawing.Size(33, 19);
             this.txtNam2.TabIndex = 25;
@@ -270,7 +280,7 @@
             this.txtThang2.Appearance.ForeColor = System.Drawing.SystemColors.Highlight;
             this.txtThang2.Appearance.Options.UseFont = true;
             this.txtThang2.Appearance.Options.UseForeColor = true;
-            this.txtThang2.Location = new System.Drawing.Point(933, 43);
+            this.txtThang2.Location = new System.Drawing.Point(933, 30);
             this.txtThang2.Name = "txtThang2";
             this.txtThang2.Size = new System.Drawing.Size(45, 19);
             this.txtThang2.TabIndex = 25;
@@ -283,7 +293,7 @@
             this.txtNam1.Appearance.ForeColor = System.Drawing.SystemColors.Highlight;
             this.txtNam1.Appearance.Options.UseFont = true;
             this.txtNam1.Appearance.Options.UseForeColor = true;
-            this.txtNam1.Location = new System.Drawing.Point(771, 43);
+            this.txtNam1.Location = new System.Drawing.Point(771, 30);
             this.txtNam1.Name = "txtNam1";
             this.txtNam1.Size = new System.Drawing.Size(33, 19);
             this.txtNam1.TabIndex = 25;
@@ -296,7 +306,7 @@
             this.txtNgay2.Appearance.ForeColor = System.Drawing.SystemColors.Highlight;
             this.txtNgay2.Appearance.Options.UseFont = true;
             this.txtNgay2.Appearance.Options.UseForeColor = true;
-            this.txtNgay2.Location = new System.Drawing.Point(865, 43);
+            this.txtNgay2.Location = new System.Drawing.Point(865, 30);
             this.txtNgay2.Name = "txtNgay2";
             this.txtNgay2.Size = new System.Drawing.Size(36, 19);
             this.txtNgay2.TabIndex = 25;
@@ -309,7 +319,7 @@
             this.txtThang1.Appearance.ForeColor = System.Drawing.SystemColors.Highlight;
             this.txtThang1.Appearance.Options.UseFont = true;
             this.txtThang1.Appearance.Options.UseForeColor = true;
-            this.txtThang1.Location = new System.Drawing.Point(699, 43);
+            this.txtThang1.Location = new System.Drawing.Point(699, 30);
             this.txtThang1.Name = "txtThang1";
             this.txtThang1.Size = new System.Drawing.Size(45, 19);
             this.txtThang1.TabIndex = 25;
@@ -322,7 +332,7 @@
             this.txtNgay1.Appearance.ForeColor = System.Drawing.SystemColors.Highlight;
             this.txtNgay1.Appearance.Options.UseFont = true;
             this.txtNgay1.Appearance.Options.UseForeColor = true;
-            this.txtNgay1.Location = new System.Drawing.Point(631, 43);
+            this.txtNgay1.Location = new System.Drawing.Point(631, 30);
             this.txtNgay1.Name = "txtNgay1";
             this.txtNgay1.Size = new System.Drawing.Size(36, 19);
             this.txtNgay1.TabIndex = 25;
@@ -335,7 +345,7 @@
             this.labelControl3.Appearance.ForeColor = System.Drawing.SystemColors.Highlight;
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(414, 43);
+            this.labelControl3.Location = new System.Drawing.Point(414, 30);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(101, 19);
             this.labelControl3.TabIndex = 25;
@@ -348,7 +358,7 @@
             this.labelControl2.Appearance.ForeColor = System.Drawing.SystemColors.Highlight;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(196, 43);
+            this.labelControl2.Location = new System.Drawing.Point(196, 30);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(138, 19);
             this.labelControl2.TabIndex = 25;
@@ -440,7 +450,6 @@
             // 
             this.gridView2.GridControl = this.grid_CTDonThuoc;
             this.gridView2.Name = "gridView2";
-            this.gridView2.OptionsFind.AlwaysVisible = true;
             // 
             // grid_CTDonThuoc
             // 
@@ -457,9 +466,9 @@
             // 
             // txt_mathuoc
             // 
-            this.txt_mathuoc.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_mathuoc.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.txt_mathuoc.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mathuoc.Location = new System.Drawing.Point(175, 3);
+            this.txt_mathuoc.Location = new System.Drawing.Point(175, 4);
             this.txt_mathuoc.Name = "txt_mathuoc";
             this.txt_mathuoc.Size = new System.Drawing.Size(151, 30);
             this.txt_mathuoc.TabIndex = 38;
@@ -470,9 +479,9 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel1.Location = new System.Drawing.Point(97, 40);
+            this.panel1.Location = new System.Drawing.Point(97, 65);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1047, 176);
+            this.panel1.Size = new System.Drawing.Size(1047, 151);
             this.panel1.TabIndex = 36;
             // 
             // sidePanel3
@@ -490,6 +499,14 @@
             // 
             this.sidePanel4.Appearance.BackColor = System.Drawing.Color.White;
             this.sidePanel4.Appearance.Options.UseBackColor = true;
+            this.sidePanel4.Controls.Add(this.label5);
+            this.sidePanel4.Controls.Add(this.label4);
+            this.sidePanel4.Controls.Add(this.lbl_masanpham);
+            this.sidePanel4.Controls.Add(this.stt);
+            this.sidePanel4.Controls.Add(this.label7);
+            this.sidePanel4.Controls.Add(this.label3);
+            this.sidePanel4.Controls.Add(this.label2);
+            this.sidePanel4.Controls.Add(this.lbl_giasauthue);
             this.sidePanel4.Controls.Add(this.cbb_SoLieu);
             this.sidePanel4.Controls.Add(this.btn_SuaDonNhap);
             this.sidePanel4.Controls.Add(this.panel1);
@@ -504,19 +521,21 @@
             // 
             // cbb_SoLieu
             // 
+            this.cbb_SoLieu.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.cbb_SoLieu.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbb_SoLieu.FormattingEnabled = true;
-            this.cbb_SoLieu.Location = new System.Drawing.Point(572, 11);
+            this.cbb_SoLieu.Location = new System.Drawing.Point(572, 4);
             this.cbb_SoLieu.Name = "cbb_SoLieu";
-            this.cbb_SoLieu.Size = new System.Drawing.Size(121, 21);
+            this.cbb_SoLieu.Size = new System.Drawing.Size(121, 30);
             this.cbb_SoLieu.TabIndex = 42;
             // 
             // btn_SuaDonNhap
             // 
-            this.btn_SuaDonNhap.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_SuaDonNhap.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_SuaDonNhap.Appearance.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SuaDonNhap.Appearance.Options.UseFont = true;
             this.btn_SuaDonNhap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_SuaDonNhap.ImageOptions.Image")));
-            this.btn_SuaDonNhap.Location = new System.Drawing.Point(997, 6);
+            this.btn_SuaDonNhap.Location = new System.Drawing.Point(997, 4);
             this.btn_SuaDonNhap.LookAndFeel.UseDefaultLookAndFeel = false;
             this.btn_SuaDonNhap.Name = "btn_SuaDonNhap";
             this.btn_SuaDonNhap.Size = new System.Drawing.Size(143, 31);
@@ -526,16 +545,120 @@
             // 
             // labelControl4
             // 
-            this.labelControl4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelControl4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.ForeColor = System.Drawing.SystemColors.Highlight;
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(100, 9);
+            this.labelControl4.Location = new System.Drawing.Point(100, 10);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(69, 19);
             this.labelControl4.TabIndex = 25;
             this.labelControl4.Text = "Mã Thuốc";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label5.Location = new System.Drawing.Point(906, 40);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(120, 22);
+            this.label5.TabIndex = 43;
+            this.label5.Text = "Ngày Hết Hạn";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label4.Location = new System.Drawing.Point(171, 40);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 22);
+            this.label4.TabIndex = 49;
+            this.label4.Text = "Mã Thuốc";
+            // 
+            // lbl_masanpham
+            // 
+            this.lbl_masanpham.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_masanpham.AutoSize = true;
+            this.lbl_masanpham.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_masanpham.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lbl_masanpham.Location = new System.Drawing.Point(281, 40);
+            this.lbl_masanpham.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_masanpham.Name = "lbl_masanpham";
+            this.lbl_masanpham.Size = new System.Drawing.Size(93, 22);
+            this.lbl_masanpham.TabIndex = 50;
+            this.lbl_masanpham.Text = "Tên Thuốc";
+            // 
+            // stt
+            // 
+            this.stt.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.stt.AutoSize = true;
+            this.stt.BackColor = System.Drawing.Color.White;
+            this.stt.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.stt.Location = new System.Drawing.Point(115, 40);
+            this.stt.Name = "stt";
+            this.stt.Size = new System.Drawing.Size(41, 22);
+            this.stt.TabIndex = 48;
+            this.stt.Text = "STT";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label7.Location = new System.Drawing.Point(778, 40);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(32, 22);
+            this.label7.TabIndex = 44;
+            this.label7.Text = "TT";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label3.Location = new System.Drawing.Point(686, 40);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 22);
+            this.label3.TabIndex = 45;
+            this.label3.Text = "ĐVT";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(550, 40);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 22);
+            this.label2.TabIndex = 46;
+            this.label2.Text = "Số Lượng";
+            // 
+            // lbl_giasauthue
+            // 
+            this.lbl_giasauthue.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_giasauthue.AutoSize = true;
+            this.lbl_giasauthue.BackColor = System.Drawing.Color.White;
+            this.lbl_giasauthue.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_giasauthue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lbl_giasauthue.Location = new System.Drawing.Point(426, 40);
+            this.lbl_giasauthue.Name = "lbl_giasauthue";
+            this.lbl_giasauthue.Size = new System.Drawing.Size(36, 22);
+            this.lbl_giasauthue.TabIndex = 47;
+            this.lbl_giasauthue.Text = "Giá";
             // 
             // BaoCaoBanHang
             // 
@@ -602,5 +725,13 @@
         private System.Windows.Forms.TextBox txt_MaDonBan;
         private System.Windows.Forms.ComboBox cbb_SoLieu;
         private System.Windows.Forms.CheckBox cb_ThuocNhayCam;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl_masanpham;
+        private System.Windows.Forms.Label stt;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_giasauthue;
     }
 }

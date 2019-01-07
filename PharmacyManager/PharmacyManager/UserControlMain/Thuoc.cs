@@ -33,6 +33,10 @@ namespace PharmacyManager.UserControlMain
         public int allsl = 0;
         public string ntn = "";
         DateTime now = DateTime.Now;
+        void SetWidth(int width)
+        {
+            this.Width = width;
+        }
         private void Thuoc_Load(object sender, EventArgs e)
         {
             this.Dock = DockStyle.Top;

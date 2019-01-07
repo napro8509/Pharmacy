@@ -53,13 +53,13 @@
             this.sidePanel4 = new DevExpress.XtraEditors.SidePanel();
             this.lbl_ThongBao = new System.Windows.Forms.Label();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.cbb_LoaiDonNhap = new System.Windows.Forms.ComboBox();
             this.txt_ttduocsy = new System.Windows.Forms.TextBox();
             this.cbb_DuocSy = new System.Windows.Forms.ComboBox();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.sidePanel3 = new DevExpress.XtraEditors.SidePanel();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
@@ -256,7 +256,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(256, 221);
+            this.label4.Location = new System.Drawing.Point(225, 221);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 22);
@@ -269,7 +269,7 @@
             this.lbl_masanpham.AutoSize = true;
             this.lbl_masanpham.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_masanpham.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lbl_masanpham.Location = new System.Drawing.Point(353, 222);
+            this.lbl_masanpham.Location = new System.Drawing.Point(330, 222);
             this.lbl_masanpham.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_masanpham.Name = "lbl_masanpham";
             this.lbl_masanpham.Size = new System.Drawing.Size(93, 22);
@@ -283,7 +283,7 @@
             this.stt.BackColor = System.Drawing.Color.White;
             this.stt.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.stt.Location = new System.Drawing.Point(192, 222);
+            this.stt.Location = new System.Drawing.Point(166, 222);
             this.stt.Name = "stt";
             this.stt.Size = new System.Drawing.Size(41, 22);
             this.stt.TabIndex = 31;
@@ -389,6 +389,20 @@
             this.labelControl8.Text = "Chọn Loại Đơn Nhập";
             this.labelControl8.Click += new System.EventHandler(this.labelControl2_Click);
             // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(340, 118);
+            this.simpleButton1.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(108, 63);
+            this.simpleButton1.TabIndex = 27;
+            this.simpleButton1.Text = "Kiểm Tra";
+            this.simpleButton1.Click += new System.EventHandler(this.btn_test_Click);
+            // 
             // cbb_LoaiDonNhap
             // 
             this.cbb_LoaiDonNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -464,20 +478,6 @@
             this.sidePanel3.Size = new System.Drawing.Size(1205, 111);
             this.sidePanel3.TabIndex = 30;
             this.sidePanel3.Text = "sidePanel3";
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(340, 118);
-            this.simpleButton1.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(108, 63);
-            this.simpleButton1.TabIndex = 27;
-            this.simpleButton1.Text = "Kiểm Tra";
-            this.simpleButton1.Click += new System.EventHandler(this.btn_test_Click);
             // 
             // simpleButton4
             // 
