@@ -19,6 +19,7 @@ namespace PharmacyManager.UserControlMain
         }
         DateTime now = DateTime.Now;
         BUS_DonNhap dn = new BUS_DonNhap();
+        BUS_DonBan db = new BUS_DonBan();
         void addItem()
         {
             for (int i = 1; i <= 12; i++)
@@ -73,10 +74,35 @@ namespace PharmacyManager.UserControlMain
             for (int i = 0; i < gridView1.DataRowCount; i++)
             {
                 DataRowView selectedRow = (DataRowView)gridView1.GetRow(i);
-                int Tien = int.Parse(selectedRow.Row.ItemArray[5].ToString());
+                int Tien;
+                try
+                {
+                    Tien = int.Parse(selectedRow.Row.ItemArray[5].ToString());
+                }
+                catch
+                {
+                    Tien = 0;
+                }
                 TongVon += Tien;
             }
             lbl_TongVon.Text = TongVon.ToString();
+            int TongThu = 0;
+            for (int i = 0; i < gridView2.DataRowCount; i++)
+            {
+                DataRowView selectedRow = (DataRowView)gridView2.GetRow(i);
+                int Tien;
+                try
+                {
+                    Tien = int.Parse(selectedRow.Row.ItemArray[3].ToString());
+                }
+                catch
+                {
+                    Tien = 0;
+                }
+                TongThu += Tien;
+            }
+            lbl_TongThu.Text = TongThu.ToString();
+            lbl_ThuNhap.Text = (TongThu - TongVon).ToString();
         }
 
         private void cbb_LoaiThongKe_SelectedIndexChanged(object sender, EventArgs e)
@@ -93,10 +119,15 @@ namespace PharmacyManager.UserControlMain
                 txtNam.Visible = true;
 
                 BindingSource bs = new BindingSource();
-                //dn.Get_ThongKeTheoNam(nam.Text, thang.Text, ngay.Text, MaDuocSy);
 
                 bs.DataSource = dn.Get_ThongKeTheoNam(nam.Text, thang.Text, ngay.Text).Tables["DONNHAP"];
                 grid_DonNhap.DataSource = bs;
+
+                BindingSource _bs = new BindingSource();
+
+                _bs.DataSource = db.Get_ThongKeTheoNam(nam.Text, thang.Text, ngay.Text, "", false).Tables["DONBAN"];
+                grid_baoCaoBanHang.DataSource = _bs;
+
             }
             if (cbb_LoaiThongKe.SelectedIndex == 1)
             {
@@ -109,6 +140,10 @@ namespace PharmacyManager.UserControlMain
 
                 bs.DataSource = dn.Get_ThongKeTheoNam(nam.Text, thang.Text, "0").Tables["DONNHAP"];
                 grid_DonNhap.DataSource = bs;
+                BindingSource _bs = new BindingSource();
+
+                _bs.DataSource = db.Get_ThongKeTheoNam(nam.Text, thang.Text, "0", "", false).Tables["DONBAN"];
+                grid_baoCaoBanHang.DataSource = _bs;
             }
 
             if (cbb_LoaiThongKe.SelectedIndex == 2)
@@ -119,6 +154,11 @@ namespace PharmacyManager.UserControlMain
 
                 bs.DataSource = dn.Get_ThongKeTheoNam(nam.Text, "0", "0").Tables["DONNHAP"];
                 grid_DonNhap.DataSource = bs;
+
+                BindingSource _bs = new BindingSource();
+
+                _bs.DataSource = db.Get_ThongKeTheoNam(nam.Text, "0", "0", "", false).Tables["DONBAN"];
+                grid_baoCaoBanHang.DataSource = _bs;
             }
             if (cbb_LoaiThongKe.SelectedIndex == 3)
             {
@@ -138,6 +178,10 @@ namespace PharmacyManager.UserControlMain
 
                 bs.DataSource = dn.Get_ThongKeKhoangTime(nam.Text, thang.Text, ngay.Text, nam_2.Text, thang_2.Text, ngay_2.Text).Tables["DONNHAP"];
                 grid_DonNhap.DataSource = bs;
+                BindingSource _bs = new BindingSource();
+
+                _bs.DataSource = db.Get_ThongKeKhoangTime(nam.Text, thang.Text, ngay.Text, "", nam_2.Text, thang_2.Text, ngay_2.Text,false).Tables["DONBAN"];
+                grid_baoCaoBanHang.DataSource = _bs;
             }
             TinhTongGia();
         }

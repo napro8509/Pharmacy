@@ -119,19 +119,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>JSNfeEHAvmh3vdfsWUYDAaCkEBxUqVVQ+0BmdwX+Fj4=</dsig:DigestValue>
+        <dsig:DigestValue>r9nY0XOKVKzvVixklkb/BW+svtz/izCu99piT+2PWb4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DAL.dll" size="34304">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DAL.dll" size="36352">
       <assemblyIdentity name="DAL" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2oaF+Ru7iX3AIa8hC9gIoJUxLRR8aZ2TsWc/m6iaXzE=</dsig:DigestValue>
+        <dsig:DigestValue>HMcjv4llI+Mh20T0jf8Ohatg3ug1O4t+6lWPiFMTGNw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -784,14 +784,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PharmacyManager.exe" size="281600">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PharmacyManager.exe" size="289792">
       <assemblyIdentity name="PharmacyManager" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>1NMHBcFStkqe5/MZhPcLRY2HwtHq1zxRwGxZSdKcaxY=</dsig:DigestValue>
+        <dsig:DigestValue>QTZ6Lz6zVCv629uxEwFfZ3Hb1D7GQ9IWk/vXn7+4DGY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -807,13 +807,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="PharmacyManager.exe.config" size="77">
+  <file name="PharmacyManager.exe.config" size="75">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>sRXPO8NcIiuVI4ajMrs7gnxty0j6ChK7OorE6bM0xfQ=</dsig:DigestValue>
+      <dsig:DigestValue>fBJhPclTp8VVPFtsGkcAR/8d50QtqyrdMf8Wbg7SCPo=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

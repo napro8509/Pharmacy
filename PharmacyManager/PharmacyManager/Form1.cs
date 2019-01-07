@@ -292,5 +292,11 @@ namespace PharmacyManager
         {
             btnDoiMatKhau_ItemClick(null, null);
         }
+
+        private void btn_SoLuongThuocBan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            UserControlMain.SoLuongThuocBan slThuoc = new UserControlMain.SoLuongThuocBan();
+            addTabControl(slThuoc, "Số Lượng Thuốc Bán", "close");
+        }
     }
 }

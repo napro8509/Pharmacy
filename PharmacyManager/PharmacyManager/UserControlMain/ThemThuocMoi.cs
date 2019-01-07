@@ -51,12 +51,14 @@ namespace PharmacyManager.UserControlMain
                 cbb_SoLuongVienMoiVi.Visible = true;
                 txt_GiaMoiVi.Visible = true;
                 lbl_Vi.Visible = true;
+                lbl_GiaMoiVi.Visible = true;
             }
             if (cbb_LoaiThuoc.SelectedIndex == 1)
             {
                 cbb_SoLuongVienMoiVi.Visible = false;
                 txt_GiaMoiVi.Visible = false;
                 lbl_Vi.Visible = false;
+                lbl_GiaMoiVi.Visible = false;
             }
         }
         double MaxLoiNhuan(double a)

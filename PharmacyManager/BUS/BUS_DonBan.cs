@@ -23,9 +23,9 @@ namespace BUS
         {
             return db.Get_ThongKeTheoNam(nam, thang, ngay, MaDuocSy, ThuocNhayCam);
         }
-        public DataSet Get_ThongKeKhoangTime(string nam, string thang, string ngay, string MaDuocSy, string nam_2, string thang_2, string ngay_2)
+        public DataSet Get_ThongKeKhoangTime(string nam, string thang, string ngay, string MaDuocSy, string nam_2, string thang_2, string ngay_2, bool ThuocNhayCam)
         {
-            return db.Get_ThongKeKhoangTime(nam, thang, ngay, MaDuocSy, nam_2, thang_2, ngay_2);
+            return db.Get_ThongKeKhoangTime(nam, thang, ngay, MaDuocSy, nam_2, thang_2, ngay_2, ThuocNhayCam);
         }
         public DataTable Get_AllDoanhThu()
         {
@@ -58,6 +58,14 @@ namespace BUS
         public bool UpdateDonBan(string MaThuoc, int SoLieu)
         {
             return db.UpdateDonBan(MaThuoc, SoLieu);
+        }
+        public DataSet Get_ThongKeSoLuongThuoc(string nam, string thang, string ngay)
+        {
+            return db.Get_ThongKeSoLuongThuoc(nam, thang, ngay);
+        }
+        public DataSet Get_SoLuongKhoangTime(string nam, string thang, string ngay, string nam_2, string thang_2, string ngay_2)
+        {
+            return db.Get_SoLuongKhoangTime(nam, thang, ngay, nam_2, thang_2, ngay_2);
         }
 }
 }

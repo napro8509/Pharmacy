@@ -16,13 +16,13 @@ namespace PharmacyManager.UserControlMain
             InitializeComponent();
             if (LoaiThuoc == 1)
             {
-                loaisl.Items.Add("Viên");
+                loaisl.Items.Add("Đơn Vị");
                 loaisl.Items.Add("Vỉ");
                 loaisl.Items.Add("Hộp");
             }
             else
             {
-                loaisl.Items.Add("Gói");
+                loaisl.Items.Add("Đơn Vị");
                 loaisl.Items.Add("Hộp");
             }
         }

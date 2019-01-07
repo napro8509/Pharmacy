@@ -49,20 +49,28 @@
             this.txtNgay2 = new DevExpress.XtraEditors.LabelControl();
             this.txtThang2 = new DevExpress.XtraEditors.LabelControl();
             this.txtNam2 = new DevExpress.XtraEditors.LabelControl();
+            this.grid_baoCaoBanHang = new DevExpress.XtraGrid.GridControl();
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.lbl_TongThu = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lbl_ThuNhap = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grid_DonNhap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.sidePanel1.SuspendLayout();
             this.sidePanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_baoCaoBanHang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // grid_DonNhap
             // 
             this.grid_DonNhap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.grid_DonNhap.Location = new System.Drawing.Point(92, 121);
+            this.grid_DonNhap.Location = new System.Drawing.Point(92, 186);
             this.grid_DonNhap.LookAndFeel.UseDefaultLookAndFeel = false;
             this.grid_DonNhap.MainView = this.gridView1;
             this.grid_DonNhap.Name = "grid_DonNhap";
-            this.grid_DonNhap.Size = new System.Drawing.Size(911, 381);
+            this.grid_DonNhap.Size = new System.Drawing.Size(492, 316);
             this.grid_DonNhap.TabIndex = 38;
             this.grid_DonNhap.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -160,7 +168,7 @@
             this.lbl_TongVon.AutoSize = true;
             this.lbl_TongVon.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_TongVon.ForeColor = System.Drawing.Color.Red;
-            this.lbl_TongVon.Location = new System.Drawing.Point(606, 59);
+            this.lbl_TongVon.Location = new System.Drawing.Point(473, 30);
             this.lbl_TongVon.Name = "lbl_TongVon";
             this.lbl_TongVon.Size = new System.Drawing.Size(31, 32);
             this.lbl_TongVon.TabIndex = 40;
@@ -172,7 +180,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(433, 59);
+            this.label1.Location = new System.Drawing.Point(300, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(137, 32);
             this.label1.TabIndex = 39;
@@ -208,6 +216,10 @@
             // 
             this.sidePanel2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.sidePanel2.Appearance.Options.UseBackColor = true;
+            this.sidePanel2.Controls.Add(this.lbl_ThuNhap);
+            this.sidePanel2.Controls.Add(this.label4);
+            this.sidePanel2.Controls.Add(this.lbl_TongThu);
+            this.sidePanel2.Controls.Add(this.label3);
             this.sidePanel2.Controls.Add(this.lbl_TongVon);
             this.sidePanel2.Controls.Add(this.label1);
             this.sidePanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -308,11 +320,77 @@
             this.txtNam2.TabIndex = 43;
             this.txtNam2.Text = "Năm";
             // 
+            // grid_baoCaoBanHang
+            // 
+            this.grid_baoCaoBanHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.grid_baoCaoBanHang.Location = new System.Drawing.Point(590, 186);
+            this.grid_baoCaoBanHang.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.grid_baoCaoBanHang.MainView = this.gridView2;
+            this.grid_baoCaoBanHang.Name = "grid_baoCaoBanHang";
+            this.grid_baoCaoBanHang.Size = new System.Drawing.Size(492, 316);
+            this.grid_baoCaoBanHang.TabIndex = 44;
+            this.grid_baoCaoBanHang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView2});
+            // 
+            // gridView2
+            // 
+            this.gridView2.GridControl = this.grid_baoCaoBanHang;
+            this.gridView2.Name = "gridView2";
+            // 
+            // lbl_TongThu
+            // 
+            this.lbl_TongThu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_TongThu.AutoSize = true;
+            this.lbl_TongThu.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TongThu.ForeColor = System.Drawing.Color.Red;
+            this.lbl_TongThu.Location = new System.Drawing.Point(975, 30);
+            this.lbl_TongThu.Name = "lbl_TongThu";
+            this.lbl_TongThu.Size = new System.Drawing.Size(31, 32);
+            this.lbl_TongThu.TabIndex = 42;
+            this.lbl_TongThu.Text = "0";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(802, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(137, 32);
+            this.label3.TabIndex = 41;
+            this.label3.Text = "Tổng Vốn:";
+            // 
+            // lbl_ThuNhap
+            // 
+            this.lbl_ThuNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_ThuNhap.AutoSize = true;
+            this.lbl_ThuNhap.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ThuNhap.ForeColor = System.Drawing.Color.Red;
+            this.lbl_ThuNhap.Location = new System.Drawing.Point(695, 81);
+            this.lbl_ThuNhap.Name = "lbl_ThuNhap";
+            this.lbl_ThuNhap.Size = new System.Drawing.Size(31, 32);
+            this.lbl_ThuNhap.TabIndex = 44;
+            this.lbl_ThuNhap.Text = "0";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(522, 81);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(142, 32);
+            this.label4.TabIndex = 43;
+            this.label4.Text = "Thu Nhập:";
+            // 
             // TinhGiaVon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.grid_baoCaoBanHang);
             this.Controls.Add(this.txtNam2);
             this.Controls.Add(this.txtThang2);
             this.Controls.Add(this.txtNgay2);
@@ -339,6 +417,8 @@
             this.sidePanel1.PerformLayout();
             this.sidePanel2.ResumeLayout(false);
             this.sidePanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_baoCaoBanHang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,5 +447,11 @@
         private DevExpress.XtraEditors.LabelControl txtNgay2;
         private DevExpress.XtraEditors.LabelControl txtThang2;
         private DevExpress.XtraEditors.LabelControl txtNam2;
+        private DevExpress.XtraGrid.GridControl grid_baoCaoBanHang;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private System.Windows.Forms.Label lbl_ThuNhap;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl_TongThu;
+        private System.Windows.Forms.Label label3;
     }
 }

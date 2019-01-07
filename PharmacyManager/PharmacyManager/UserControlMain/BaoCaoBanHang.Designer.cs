@@ -41,6 +41,7 @@
             this.ngay_2 = new System.Windows.Forms.ComboBox();
             this.cbb_DuocSy = new System.Windows.Forms.ComboBox();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
+            this.cb_ThuocNhayCam = new System.Windows.Forms.CheckBox();
             this.txt_MaDonBan = new System.Windows.Forms.TextBox();
             this.txtNam2 = new DevExpress.XtraEditors.LabelControl();
             this.txtThang2 = new DevExpress.XtraEditors.LabelControl();
@@ -62,10 +63,9 @@
             this.panel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.sidePanel3 = new DevExpress.XtraEditors.SidePanel();
             this.sidePanel4 = new DevExpress.XtraEditors.SidePanel();
+            this.cbb_SoLieu = new System.Windows.Forms.ComboBox();
             this.btn_SuaDonNhap = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.cbb_SoLieu = new System.Windows.Forms.ComboBox();
-            this.cb_ThuocNhayCam = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.grid_baoCaoBanHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.sidePanel1.SuspendLayout();
@@ -110,8 +110,7 @@
             "Báo Cáo Theo Năm",
             "Bao Cáo Theo Khoảng Thời Gian",
             "Báo Cáo Theo Dược Viên",
-            "Báo Cáo Theo Đơn",
-            "Các Đơn Thuốc Nhạy Cảm"});
+            "Báo Cáo Theo Đơn"});
             this.cbb_LoaiThongKe.Location = new System.Drawing.Point(196, 68);
             this.cbb_LoaiThongKe.Name = "cbb_LoaiThongKe";
             this.cbb_LoaiThongKe.Size = new System.Drawing.Size(212, 30);
@@ -227,6 +226,19 @@
             this.sidePanel1.Size = new System.Drawing.Size(1234, 117);
             this.sidePanel1.TabIndex = 22;
             this.sidePanel1.Text = "sidePanel1";
+            // 
+            // cb_ThuocNhayCam
+            // 
+            this.cb_ThuocNhayCam.AutoSize = true;
+            this.cb_ThuocNhayCam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_ThuocNhayCam.ForeColor = System.Drawing.Color.Black;
+            this.cb_ThuocNhayCam.Location = new System.Drawing.Point(1023, 15);
+            this.cb_ThuocNhayCam.Name = "cb_ThuocNhayCam";
+            this.cb_ThuocNhayCam.Size = new System.Drawing.Size(226, 24);
+            this.cb_ThuocNhayCam.TabIndex = 27;
+            this.cb_ThuocNhayCam.Text = "Là Đơn Thuốc Nhạy Cảm";
+            this.cb_ThuocNhayCam.UseVisualStyleBackColor = true;
+            this.cb_ThuocNhayCam.CheckedChanged += new System.EventHandler(this.cb_ThuocNhayCam_CheckedChanged);
             // 
             // txt_MaDonBan
             // 
@@ -490,6 +502,14 @@
             this.sidePanel4.TabIndex = 42;
             this.sidePanel4.Text = "sidePanel4";
             // 
+            // cbb_SoLieu
+            // 
+            this.cbb_SoLieu.FormattingEnabled = true;
+            this.cbb_SoLieu.Location = new System.Drawing.Point(572, 11);
+            this.cbb_SoLieu.Name = "cbb_SoLieu";
+            this.cbb_SoLieu.Size = new System.Drawing.Size(121, 21);
+            this.cbb_SoLieu.TabIndex = 42;
+            // 
             // btn_SuaDonNhap
             // 
             this.btn_SuaDonNhap.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -516,27 +536,6 @@
             this.labelControl4.Size = new System.Drawing.Size(69, 19);
             this.labelControl4.TabIndex = 25;
             this.labelControl4.Text = "Mã Thuốc";
-            // 
-            // cbb_SoLieu
-            // 
-            this.cbb_SoLieu.FormattingEnabled = true;
-            this.cbb_SoLieu.Location = new System.Drawing.Point(572, 11);
-            this.cbb_SoLieu.Name = "cbb_SoLieu";
-            this.cbb_SoLieu.Size = new System.Drawing.Size(121, 21);
-            this.cbb_SoLieu.TabIndex = 42;
-            // 
-            // cb_ThuocNhayCam
-            // 
-            this.cb_ThuocNhayCam.AutoSize = true;
-            this.cb_ThuocNhayCam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_ThuocNhayCam.ForeColor = System.Drawing.Color.Black;
-            this.cb_ThuocNhayCam.Location = new System.Drawing.Point(1023, 15);
-            this.cb_ThuocNhayCam.Name = "cb_ThuocNhayCam";
-            this.cb_ThuocNhayCam.Size = new System.Drawing.Size(226, 24);
-            this.cb_ThuocNhayCam.TabIndex = 27;
-            this.cb_ThuocNhayCam.Text = "Là Đơn Thuốc Nhạy Cảm";
-            this.cb_ThuocNhayCam.UseVisualStyleBackColor = true;
-            this.cb_ThuocNhayCam.CheckedChanged += new System.EventHandler(this.cb_ThuocNhayCam_CheckedChanged);
             // 
             // BaoCaoBanHang
             // 

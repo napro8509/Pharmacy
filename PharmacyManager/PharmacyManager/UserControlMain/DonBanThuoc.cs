@@ -34,9 +34,7 @@ namespace PharmacyManager.UserControlMain
             cbb_LoaiDonThuoc.SelectedIndex = 0;
             this.ActiveControl = txt_mathuoc;
             sidePanel1.Width = this.Width / 2;
-            BindingSource bs = new BindingSource();
-            bs.DataSource = kho.Get_Kho(cbb_LoaiDonThuoc.SelectedIndex).Tables["KhoHang,Thuoc"];
-            gridControl1.DataSource = bs;
+
 
             for(int i=1;i<=9;i++)
             {
@@ -317,7 +315,9 @@ namespace PharmacyManager.UserControlMain
                     A.setgt();
                 }
                 thuoc_ButtonClick(null, null);
+                gridControl1_Load(null, null);
                 //lbl_ThongBao.Text = "Bạn Vừa Mới Bán Thành Công Một Đơn Thuốc " + now.ToString();
+
             }
         }
 
@@ -381,6 +381,13 @@ namespace PharmacyManager.UserControlMain
         private void cbb_SoLieu_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void gridControl1_Load(object sender, EventArgs e)
+        {
+            BindingSource bs = new BindingSource();
+            bs.DataSource = kho.Get_Kho(cbb_LoaiDonThuoc.SelectedIndex).Tables["KhoHang,Thuoc"];
+            gridControl1.DataSource = bs;
         }
     }
 }

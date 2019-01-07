@@ -157,7 +157,7 @@ namespace DAL
             {
                 SqlDataAdapter da;
                 DataSet ds;
-                string sqlstr = "select dn.MaDonNhap 'Mã Đơn Nhập',CONVERT (varchar(10),dn.NgayNhap, 101) 'Ngày Nhập', t.TenThuoc 'Tên Thuốc', t.GiaSauThue 'Giá Sau Thuế', ct.SoLuong 'Số Lượng', t.GiaSauThue*ct.SoLuong 'Tổng Tiền'";
+                string sqlstr = "select dn.MaDonNhap 'Mã Đơn Nhập',CONVERT (varchar(10),dn.NgayNhap, 101) 'Ngày Nhập', t.TenThuoc 'Tên Thuốc', t.GiaSauThue 'Giá Sau Thuế', ct.SoLuong/t.Hop 'Số Lượng', (t.GiaSauThue*ct.SoLuong)/t.Hop 'Tổng Tiền'";
                 sqlstr += " from DONNHAP dn, CTDN ct,THUOC t";
                 sqlstr += " where dn.MaDonNhap=ct.MaDonNhap and t.MaThuoc=ct.MaThuoc and ";
                 if (int.Parse(nam) != 0)
@@ -193,7 +193,7 @@ namespace DAL
             {
                 SqlDataAdapter da;
                 DataSet ds;
-                string sqlstr = "select dn.MaDonNhap 'Mã Đơn Nhập',CONVERT (varchar(10),dn.NgayNhap, 101) 'Ngày Nhập', t.TenThuoc 'Tên Thuốc', t.GiaSauThue 'Giá Sau Thuế', ct.SoLuong 'Số Lượng', t.GiaSauThue*ct.SoLuong 'Tổng Tiền'";
+                string sqlstr = "select dn.MaDonNhap 'Mã Đơn Nhập',CONVERT (varchar(10),dn.NgayNhap, 101) 'Ngày Nhập', t.TenThuoc 'Tên Thuốc', t.GiaSauThue 'Giá Sau Thuế', ct.SoLuong/t.Hop 'Số Lượng', (t.GiaSauThue*ct.SoLuong)/t.Hop 'Tổng Tiền'";
                 sqlstr += " from DONNHAP dn, CTDN ct,THUOC t";
                 sqlstr += " where dn.MaDonNhap=ct.MaDonNhap and t.MaThuoc=ct.MaThuoc";
                 if (ktraNgay())

@@ -167,6 +167,12 @@
     <Compile Include="UserControlMain\NhapKho.Designer.cs">
       <DependentUpon>NhapKho.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlMain\SoLuongThuocBan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMain\SoLuongThuocBan.Designer.cs">
+      <DependentUpon>SoLuongThuocBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlMain\TaiKhoan.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -285,6 +291,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlMain\NhapKho.resx">
       <DependentUpon>NhapKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMain\SoLuongThuocBan.resx">
+      <DependentUpon>SoLuongThuocBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlMain\TaiKhoan.resx">
       <DependentUpon>TaiKhoan.cs</DependentUpon>

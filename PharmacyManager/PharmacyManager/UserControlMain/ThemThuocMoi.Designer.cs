@@ -58,7 +58,7 @@
             this.cbb_QuyDinh = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lbl_GiaMoiVi = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txt_MaThuoc
@@ -223,8 +223,8 @@
             this.cbb_LoaiThuoc.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbb_LoaiThuoc.FormattingEnabled = true;
             this.cbb_LoaiThuoc.Items.AddRange(new object[] {
-            "Viên",
-            "Gói"});
+            "Có Vỉ",
+            "Không Vỉ"});
             this.cbb_LoaiThuoc.Location = new System.Drawing.Point(132, 246);
             this.cbb_LoaiThuoc.Name = "cbb_LoaiThuoc";
             this.cbb_LoaiThuoc.Size = new System.Drawing.Size(100, 27);
@@ -283,9 +283,9 @@
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(132, 289);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(98, 19);
+            this.label11.Size = new System.Drawing.Size(115, 19);
             this.label11.TabIndex = 29;
-            this.label11.Text = "Giá Mỗi Viên";
+            this.label11.Text = "Giá Mỗi Đơn Vị";
             // 
             // cbb_thangSuDung
             // 
@@ -397,17 +397,17 @@
             this.label10.TabIndex = 37;
             this.label10.Text = "Giá Mỗi Hộp";
             // 
-            // label12
+            // lbl_GiaMoiVi
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(507, 289);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(81, 19);
-            this.label12.TabIndex = 38;
-            this.label12.Text = "Giá Mỗi Vỉ";
+            this.lbl_GiaMoiVi.AutoSize = true;
+            this.lbl_GiaMoiVi.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_GiaMoiVi.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_GiaMoiVi.ForeColor = System.Drawing.Color.White;
+            this.lbl_GiaMoiVi.Location = new System.Drawing.Point(507, 289);
+            this.lbl_GiaMoiVi.Name = "lbl_GiaMoiVi";
+            this.lbl_GiaMoiVi.Size = new System.Drawing.Size(81, 19);
+            this.lbl_GiaMoiVi.TabIndex = 38;
+            this.lbl_GiaMoiVi.Text = "Giá Mỗi Vỉ";
             // 
             // ThemThuocMoi
             // 
@@ -415,7 +415,7 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.lbl_GiaMoiVi);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cbb_QuyDinh);
@@ -484,6 +484,6 @@
         private System.Windows.Forms.ComboBox cbb_QuyDinh;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lbl_GiaMoiVi;
     }
 }

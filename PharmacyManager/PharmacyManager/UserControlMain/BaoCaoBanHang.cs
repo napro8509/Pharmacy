@@ -86,6 +86,7 @@ namespace PharmacyManager.UserControlMain
             txtNgay2.Visible = false;
             txtThang2.Visible = false;
             txtNam2.Visible = false;
+            txt_MaDonBan.Visible = false;
             //cbb_DuocSy.Visible = false;
         }
         private void cbb_LoaiThongKe_SelectedIndexChanged(object sender, EventArgs e)
@@ -124,7 +125,7 @@ namespace PharmacyManager.UserControlMain
                 txtThang1.Visible = true;
                 txtNam1.Visible = true;
                 BindingSource bs = new BindingSource();
-                db.Get_ThongKeTheoNam(nam.Text, thang.Text, "0", MaDuocSy, ThuocNhayCam);
+                //db.Get_ThongKeTheoNam(nam.Text, thang.Text, "0", MaDuocSy, ThuocNhayCam);
 
                 bs.DataSource = db.Get_ThongKeTheoNam(nam.Text, thang.Text, "0", MaDuocSy, ThuocNhayCam).Tables["DONBAN"];
                 grid_baoCaoBanHang.DataSource = bs;
@@ -157,7 +158,7 @@ namespace PharmacyManager.UserControlMain
                 BindingSource bs = new BindingSource();
                 //db.Get_ThongKeKhoangTime(nam.Text, thang.Text, ngay.Text, MaDuocSy, nam_2.Text, thang_2.Text, ngay_2.Text);
 
-                bs.DataSource = db.Get_ThongKeKhoangTime(nam.Text, thang.Text, ngay.Text, MaDuocSy, nam_2.Text, thang_2.Text, ngay_2.Text).Tables["DONBAN"];
+                bs.DataSource = db.Get_ThongKeKhoangTime(nam.Text, thang.Text, ngay.Text, MaDuocSy, nam_2.Text, thang_2.Text, ngay_2.Text, ThuocNhayCam).Tables["DONBAN"];
                 grid_baoCaoBanHang.DataSource = bs;
             }
             if (cbb_LoaiThongKe.SelectedIndex == 4)
@@ -173,24 +174,27 @@ namespace PharmacyManager.UserControlMain
             }
             if (cbb_LoaiThongKe.SelectedIndex == 5)
             {
+                txt_MaDonBan.Visible = true;
+                this.ActiveControl = txt_MaDonBan;
                 BindingSource bs = new BindingSource();
                 db.Get_ThongKeTheoMaDon(txt_MaDonBan.Text);
 
                 bs.DataSource = db.Get_ThongKeTheoMaDon(txt_MaDonBan.Text).Tables["DONBAN"];
                 grid_baoCaoBanHang.DataSource = bs;
 
-
+                
             }
-            if (cbb_LoaiThongKe.SelectedIndex == 6)
-            {
-                BindingSource bs = new BindingSource();
-                db.Get_ThongKeTheoMaDon(txt_MaDonBan.Text);
+            //if (cbb_LoaiThongKe.SelectedIndex == 6)
+            //{
+                
+            //    BindingSource bs = new BindingSource();
+            //    db.Get_ThongKeTheoMaDon(txt_MaDonBan.Text);
 
-                bs.DataSource = db.Get_ThongKeTheoMaDon(txt_MaDonBan.Text).Tables["DONBAN"];
-                grid_baoCaoBanHang.DataSource = bs;
+            //    bs.DataSource = db.Get_ThongKeTheoMaDon(txt_MaDonBan.Text).Tables["DONBAN"];
+            //    grid_baoCaoBanHang.DataSource = bs;
 
 
-            }
+            //}
             try{
                 DataRowView selectedRow = (DataRowView)gridView1.GetRow(gridView1.FocusedRowHandle);
                 string t = selectedRow.Row.ItemArray[0].ToString();

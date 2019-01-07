@@ -68,6 +68,7 @@
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabControlMain = new DevExpress.XtraTab.XtraTabControl();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.btn_SoLuongThuocBan = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControlMain)).BeginInit();
@@ -106,10 +107,11 @@
             this.btn_CapNhatTaiKhoan,
             this.barButtonItem5,
             this.btn_TraThuocHetHan,
-            this.btn_TaiKhoan});
+            this.btn_TaiKhoan,
+            this.btn_SoLuongThuocBan});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.ribbonControl1.MaxItemId = 31;
+            this.ribbonControl1.MaxItemId = 32;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageHeaderItemLinks.Add(this.btn_CapNhatTaiKhoan);
             this.ribbonControl1.PageHeaderItemLinks.Add(this.lbl_name);
@@ -355,6 +357,7 @@
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.btnDonBanThuoc);
             this.ribbonPageGroup1.ItemLinks.Add(this.btn_BaoCaoBanHang);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btn_SoLuongThuocBan);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "Bán Hàng";
             // 
@@ -404,6 +407,13 @@
             // defaultLookAndFeel1
             // 
             this.defaultLookAndFeel1.LookAndFeel.SkinName = "Blueprint";
+            // 
+            // btn_SoLuongThuocBan
+            // 
+            this.btn_SoLuongThuocBan.Caption = "Số Lượng Thuốc Bán";
+            this.btn_SoLuongThuocBan.Id = 31;
+            this.btn_SoLuongThuocBan.Name = "btn_SoLuongThuocBan";
+            this.btn_SoLuongThuocBan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_SoLuongThuocBan_ItemClick);
             // 
             // Form1
             // 
@@ -469,6 +479,7 @@
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
         private DevExpress.XtraBars.BarButtonItem btn_TraThuocHetHan;
         private DevExpress.XtraBars.BarButtonItem btn_TaiKhoan;
+        private DevExpress.XtraBars.BarButtonItem btn_SoLuongThuocBan;
     }
 }
 

@@ -82,6 +82,72 @@ namespace DAL
                 return null;
             }
         }
+        public DataSet Get_ThongKeSoLuongThuoc(string nam, string thang, string ngay)
+        {
+            try
+            {
+                SqlDataAdapter da;
+                DataSet ds;
+                string sqlstr = "select t.MaThuoc, t.TenThuoc, SUM(ct.SoLuong) as SoLuong ";
+                sqlstr += " from CTDONTHUOC ct,THUOC t, DONBAN db where ct.MaThuoc=t.MaThuoc and ct.MaDonBan=db.MaDonBan ";
+                if (int.Parse(nam) != 0)
+                {
+                    sqlstr += " and YEAR(db.NgayBan)=" + nam;
+                    if (int.Parse(thang) != 0)
+                    {
+                        sqlstr += " and MONTH(db.NgayBan)=" + thang;
+                        if (int.Parse(ngay) != 0)
+                        {
+                            sqlstr += " and DAY(db.NgayBan)=" + ngay;
+                        }
+                    }
+                }
+                sqlstr += " group by t.MaThuoc ,t.TenThuoc order by SUM(ct.SoLuong) DESC";
+
+                da = new SqlDataAdapter(sqlstr, _cn);
+                _cn.Open();
+                ds = new DataSet();
+                ds.Clear();
+
+                da.Fill(ds, "CTDONTHUOC,THUOC");
+                _cn.Close();
+                return ds;
+            }
+            catch
+            {
+                _cn.Close();
+                return null;
+            }
+        }
+        public DataSet Get_SoLuongKhoangTime(string nam, string thang, string ngay, string nam_2, string thang_2, string ngay_2)              
+        {
+            try
+            {
+
+                SqlDataAdapter da;
+                DataSet ds;
+                string sqlstr = "select t.MaThuoc, t.TenThuoc, SUM(ct.SoLuong) as SoLuong ";
+                sqlstr += "from CTDONTHUOC ct,THUOC t, DONBAN db where ct.MaThuoc=t.MaThuoc and ct.MaDonBan=db.MaDonBan ";
+                if (ktraNgay())
+                    sqlstr += "  and db.NgayBan>='" + thang + "/" + ngay + "/" + nam + "' and db.NgayBan<='" + thang_2 + "/" + ngay_2 + "/" + nam_2 + "'";
+                else
+                    sqlstr += "  and db.NgayBan>='" + ngay + "/" + thang + "/" + nam + "' and db.NgayBan<='" + ngay_2 + "/" + thang_2 + "/" + nam_2 + "'";
+                sqlstr+=" group by t.MaThuoc ,t.TenThuoc order by SUM(ct.SoLuong) DESC";
+                da = new SqlDataAdapter(sqlstr, _cn);
+                _cn.Open();
+                ds = new DataSet();
+                ds.Clear();
+
+                da.Fill(ds, "CTDONTHUOC,THUOC");
+                _cn.Close();
+                return ds;
+            }
+            catch
+            {
+                _cn.Close();
+                return null;
+            }
+        }
         public DataSet Get_ThongKeTheoMaDon(string MaDonBan)             
         {
             try
@@ -129,7 +195,7 @@ namespace DAL
                 return null;
             }
         }
-        public DataSet Get_ThongKeKhoangTime(string nam, string thang, string ngay, string MaDuocSy, string nam_2, string thang_2, string ngay_2)//Lấy tất thông tin thuốc                 
+        public DataSet Get_ThongKeKhoangTime(string nam, string thang, string ngay, string MaDuocSy, string nam_2, string thang_2, string ngay_2, bool ThuocNhayCam)             
         {
             try
             {
@@ -142,6 +208,8 @@ namespace DAL
                     sqlstr += "  and NgayBan>='" + thang + "/" + ngay + "/" + nam + "' and NgayBan<='" + thang_2 + "/" + ngay_2 + "/" + nam_2 + "'  and Gia>0";
                 else
                     sqlstr += "  and NgayBan>='" + ngay + "/" +thang  + "/" + nam + "' and NgayBan<='" + ngay_2 + "/" + thang_2 + "/" + nam_2 + "'  and Gia>0";
+                if (ThuocNhayCam)
+                    sqlstr += " and LoaiDon=2";
                 da = new SqlDataAdapter(sqlstr, _cn);
                 _cn.Open();
                 ds = new DataSet();
