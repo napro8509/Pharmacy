@@ -71,6 +71,7 @@ D:\ooad\Pharmacy-Management\Pharmacy\Pharmacy-Management\PharmacyManager\DAL\bin
 D:\ooad\Pharmacy-Management\Pharmacy\Pharmacy-Management\PharmacyManager\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\ooad\Pharmacy-Management\Pharmacy\Pharmacy-Management\PharmacyManager\DAL\obj\Debug\DAL.dll
 D:\ooad\Pharmacy-Management\Pharmacy\Pharmacy-Management\PharmacyManager\DAL\obj\Debug\DAL.pdb
+<<<<<<< HEAD
 D:\ooad\Pharmacy-Management\Pharmacy-master\Pharmacy-master\PharmacyManager\DAL\bin\Debug\DAL.dll
 D:\ooad\Pharmacy-Management\Pharmacy-master\Pharmacy-master\PharmacyManager\DAL\bin\Debug\DAL.pdb
 D:\ooad\Pharmacy-Management\Pharmacy-master\Pharmacy-master\PharmacyManager\DAL\bin\Debug\DTO.dll
@@ -78,3 +79,14 @@ D:\ooad\Pharmacy-Management\Pharmacy-master\Pharmacy-master\PharmacyManager\DAL\
 D:\ooad\Pharmacy-Management\Pharmacy-master\Pharmacy-master\PharmacyManager\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\ooad\Pharmacy-Management\Pharmacy-master\Pharmacy-master\PharmacyManager\DAL\obj\Debug\DAL.dll
 D:\ooad\Pharmacy-Management\Pharmacy-master\Pharmacy-master\PharmacyManager\DAL\obj\Debug\DAL.pdb
+=======
+D:\Projects\Four Year\0701\Pharmacy-Management\PharmacyManager\DAL\bin\Debug\DAL.dll
+D:\Projects\Four Year\0701\Pharmacy-Management\PharmacyManager\DAL\bin\Debug\DAL.pdb
+D:\Projects\Four Year\0701\Pharmacy-Management\PharmacyManager\DAL\bin\Debug\DTO.dll
+D:\Projects\Four Year\0701\Pharmacy-Management\PharmacyManager\DAL\bin\Debug\DTO.pdb
+D:\Projects\Four Year\0701\Pharmacy-Management\PharmacyManager\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Projects\Four Year\0701\Pharmacy-Management\PharmacyManager\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Projects\Four Year\0701\Pharmacy-Management\PharmacyManager\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Projects\Four Year\0701\Pharmacy-Management\PharmacyManager\DAL\obj\Debug\DAL.dll
+D:\Projects\Four Year\0701\Pharmacy-Management\PharmacyManager\DAL\obj\Debug\DAL.pdb
+>>>>>>> Na

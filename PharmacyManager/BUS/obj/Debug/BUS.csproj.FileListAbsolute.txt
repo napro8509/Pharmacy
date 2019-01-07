@@ -89,6 +89,7 @@ D:\ooad\Pharmacy-Management\Pharmacy\Pharmacy-Management\PharmacyManager\BUS\bin
 D:\ooad\Pharmacy-Management\Pharmacy\Pharmacy-Management\PharmacyManager\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 D:\ooad\Pharmacy-Management\Pharmacy\Pharmacy-Management\PharmacyManager\BUS\obj\Debug\BUS.dll
 D:\ooad\Pharmacy-Management\Pharmacy\Pharmacy-Management\PharmacyManager\BUS\obj\Debug\BUS.pdb
+<<<<<<< HEAD
 D:\ooad\Pharmacy-Management\Pharmacy-master\Pharmacy-master\PharmacyManager\BUS\bin\Debug\BUS.dll
 D:\ooad\Pharmacy-Management\Pharmacy-master\Pharmacy-master\PharmacyManager\BUS\bin\Debug\BUS.pdb
 D:\ooad\Pharmacy-Management\Pharmacy-master\Pharmacy-master\PharmacyManager\BUS\bin\Debug\DAL.dll
@@ -98,3 +99,16 @@ D:\ooad\Pharmacy-Management\Pharmacy-master\Pharmacy-master\PharmacyManager\BUS\
 D:\ooad\Pharmacy-Management\Pharmacy-master\Pharmacy-master\PharmacyManager\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 D:\ooad\Pharmacy-Management\Pharmacy-master\Pharmacy-master\PharmacyManager\BUS\obj\Debug\BUS.dll
 D:\ooad\Pharmacy-Management\Pharmacy-master\Pharmacy-master\PharmacyManager\BUS\obj\Debug\BUS.pdb
+=======
+D:\Projects\Four Year\0701\Pharmacy-Management\PharmacyManager\BUS\bin\Debug\BUS.dll
+D:\Projects\Four Year\0701\Pharmacy-Management\PharmacyManager\BUS\bin\Debug\BUS.pdb
+D:\Projects\Four Year\0701\Pharmacy-Management\PharmacyManager\BUS\bin\Debug\DAL.dll
+D:\Projects\Four Year\0701\Pharmacy-Management\PharmacyManager\BUS\bin\Debug\DTO.dll
+D:\Projects\Four Year\0701\Pharmacy-Management\PharmacyManager\BUS\bin\Debug\DAL.pdb
+D:\Projects\Four Year\0701\Pharmacy-Management\PharmacyManager\BUS\bin\Debug\DTO.pdb
+D:\Projects\Four Year\0701\Pharmacy-Management\PharmacyManager\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\Projects\Four Year\0701\Pharmacy-Management\PharmacyManager\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\Projects\Four Year\0701\Pharmacy-Management\PharmacyManager\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\Projects\Four Year\0701\Pharmacy-Management\PharmacyManager\BUS\obj\Debug\BUS.dll
+D:\Projects\Four Year\0701\Pharmacy-Management\PharmacyManager\BUS\obj\Debug\BUS.pdb
+>>>>>>> Na

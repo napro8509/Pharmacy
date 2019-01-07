@@ -7,14 +7,18 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="PharmacyManager.exe.manifest" size="48704">
+    <dependentAssembly dependencyType="install" codebase="PharmacyManager.exe.manifest" size="112442">
       <assemblyIdentity name="PharmacyManager.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+<<<<<<< HEAD
         <dsig:DigestValue>CpOOdHXU6PGsw2i05JR4fIMalk3dEqRm9DQcx7vHgjM=</dsig:DigestValue>
+=======
+        <dsig:DigestValue>mlZ7BUXPgf/kO+fs+8GzyguI/Kk5ntH8U2M3ilLj6ZQ=</dsig:DigestValue>
+>>>>>>> Na
       </hash>
     </dependentAssembly>
   </dependency>
